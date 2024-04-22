@@ -1,14 +1,20 @@
-import { Button } from "@mui/material"
 import { Routes, Route } from "react-router-dom"
 
-import DrawerAppBar from "./component/navBar/drawerAppBar.component"
+import NavBar from "./component/navBar/navBar"
+import { RenderEbook } from "./component/libro/renderEbook"
+
 function App() {
 
   return (
     <>
       <div>
-      <DrawerAppBar />
-      <Button>Hola</Button>
+        <NavBar />
+        <Routes>
+          <Route path="/" />
+          <Route path="/about" />
+          <Route path="/book" element={<RenderEbook />} />
+          <Route path="/contact" />
+        </Routes>
       </div>
     </>
   )
