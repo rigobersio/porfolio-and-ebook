@@ -1,0 +1,16 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    gap: 7vw;
+    background-color: rgb(34, 45, 123);
+    margin-bottom: 0%;
+    
+  }
+
+  
+  .footerContent {
+    text-align: center;
+    line-height: 3vw;
+    text-decoration: none;
+  }
+  
