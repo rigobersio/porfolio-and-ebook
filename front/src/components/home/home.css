@@ -1,6 +1,6 @@
 .home-container {
   background-image: url("https://res.cloudinary.com/dqh2illb5/image/upload/v1713835678/fondos/JuliusVerne2_sfdtej.jpg");
-  background-size: center;
+  background-size: auto 100%;
   background-position-y: top;
 }
 
