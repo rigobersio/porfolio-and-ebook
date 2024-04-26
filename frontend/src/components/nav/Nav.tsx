@@ -20,7 +20,7 @@ const Nav: React.FC = () => {
         <LinkRouter to="/book">
           <li className="my-4 py-4 border-slate-800 hover:bg-slate-800 hover:rounded">Lee mi Libro</li>
         </LinkRouter>
-        <LinkScroll spy={true} smooth={true} to="/contact">
+        <LinkScroll spy={true} smooth={true} to="contact">
           <li className="my-4 py-4 border-slate-800 hover:bg-slate-800 hover:rounded">Contacto</li>
         </LinkScroll>
       </ul>
@@ -36,15 +36,15 @@ const Nav: React.FC = () => {
         <div className="lg:flex md:flex lg:flex-1 items center justify-end font-normal hidden">
           <div className="flex-10">
             <ul className="flex gap-8 mr-16 text-[18]">
-              <LinkScroll spy={true} smooth={true} to="/">
+              <LinkScroll spy={true} smooth={true} to="inicio">
                 <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">Inicio</li>
               </LinkScroll>
               <LinkScroll spy={true} smooth={true} to="about">
                 <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">Sobre mi</li>
               </LinkScroll>
-              <LinkScroll spy={true} smooth={true} to="/book">
+              <LinkRouter to="/book">
                 <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">Lee mi Libro</li>
-              </LinkScroll>
+              </LinkRouter>
               <LinkScroll spy={true} smooth={true} to="/contact">
                 <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">Contacto</li>
               </LinkScroll>
@@ -52,7 +52,7 @@ const Nav: React.FC = () => {
           </div>
         </div>
         <div>{click && content} </div>
-        <button className="block sm:hidden transition" onClick={handClick}>{ click ? <FaTimes/> : <CiMenuFries/>}</button>
+        <button className="block sm:hidden transition" onClick={handleClick}>{ click ? <FaTimes/> : <CiMenuFries/>}</button>
       </div>
     </nav>
 

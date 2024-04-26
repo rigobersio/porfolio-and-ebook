@@ -7,7 +7,7 @@ import Nav from './components/nav/Nav'
 
   return (
     <>
-    <div className="bg-stale-900">
+    <div className="bg-slate-900">
       <Nav />
     </div>
     </>
