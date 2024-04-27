@@ -8,13 +8,15 @@ import Footer from './components/footer/Footer'
 
   return (
     <>
-    <div className="bg-slate-900">
+    <div>
       <Nav />
+      
     </div>
     
     <div className="bg-black">
-      <Footer/>
+      <Footer />
     </div>
+    
     </>
   )
 }
