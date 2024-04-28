@@ -5,7 +5,7 @@ import { ImLinkedin } from "react-icons/im";
 const About: React.FC = () => {
 
     return (
-      <div className="text-center pt-10 lg:w-[100%]">
+      <div className="text-center pt-10 lg:w-[100%] bg-orange-50">
         <h2 className="text-2xl">console.log(<strong>"Hello World"</strong>);</h2>
         <h2 className="text-3xl my-2">My name is <strong>Rigoberto</strong></h2>
         <p className="w-3/4 mx-auto">I am a web developer, que no sabe demasiado ingles, por lo tanto, te invito a descargar mi CV en castellano.</p>

@@ -20,7 +20,7 @@ import Contact from './components/contact/Contact'
       <Skills />
       <Contact />
     </div>
-    <div className="bg-black">
+    <div>
       <Footer />
     </div>
     
@@ -29,3 +29,19 @@ import Contact from './components/contact/Contact'
 }
 
 export default App
+
+
+/*
+<div>
+      <Nav />   
+    </div>
+    <div>
+      <About />
+      <Experience />
+      <Skills />
+      <Contact />
+    </div>
+    <div>
+      <Footer />
+    </div>
+*/
