@@ -19,6 +19,9 @@ const About: React.FC = () => {
               <ImLinkedin className='w-7 h-7 rounded' />
             </a>
           </div>
+            <div className="grid min-h-[140px] w-full place-items-center overflow-x-scroll rounded-lg p-6 lg:overflow-visible">
+              <img className="object-cover object-center rounded-full h-96 w-96" src="https://res.cloudinary.com/dqh2illb5/image/upload/v1714359052/codigo/equipoViejo_yj3ibg.jpg" alt="computadora vieja con teclado" />
+            </div>
         </div>
       </div>
     );
