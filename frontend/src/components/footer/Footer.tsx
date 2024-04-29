@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
   const Year = new Date().getFullYear();
 
   return (
-    <footer className="z-[-999] relative bg-slate-900 text-white">
+    <footer className="z-[-999] relative bottom-0 bg-slate-900 text-white">
       <div className="relative top-0 left-0 w-[100%] overflow-hidden">
         <svg data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
