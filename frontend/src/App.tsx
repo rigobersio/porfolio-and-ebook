@@ -6,24 +6,26 @@ import About from './components/about/About'
 import Experience from './components/experience/Experience'
 import Skills from './components/skills/Skills'
 import Contact from './components/contact/Contact'
- const App: React.FC = () => {
-  
+const App: React.FC = () => {
+
 
   return (
     <>
-    <div>
-      <Nav />   
-    </div>
-    <div>
-      <About />
-      <Experience />
-      <Skills />
-      <Contact />
-    </div>
-    <div>
-      <Footer />
-    </div>
-    
+      <div className="flex flex-col h-screen justify-between">
+        <div>
+          <Nav />
+
+          <div className="flex-grow flex flex-col justify-center items-center">
+            <About />
+            <Experience />
+            <Skills />
+            <Contact />
+          </div>
+        </div>
+
+        <Footer />
+      </div>
+
     </>
   )
 }
