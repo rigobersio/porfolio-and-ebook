@@ -15,14 +15,13 @@ const App: React.FC = () => {
         <div>
           <Nav />
 
-          <div className="flex-grow flex flex-col justify-center items-center">
+          <div className="mt-16 flex-grow flex flex-col justify-center items-center  bg-orange-50 pb-10">
             <About />
             <Experience />
             <Skills />
             <Contact />
           </div>
         </div>
-
         <Footer />
       </div>
 
