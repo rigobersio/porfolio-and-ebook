@@ -4,6 +4,7 @@ import { Link as LinkScroll } from 'react-scroll';
 import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
+import { VscTerminal } from "react-icons/vsc";
 
 const Nav: React.FC = () => {
   const [click, setClick] = useState(false);
@@ -31,7 +32,7 @@ const Nav: React.FC = () => {
     <nav>
       <div className="absolute top-0 left-0 right-0 h-10vh flex justify-between z-[999] bg-slate-900 text-white lg:py-5 px-20 py-4">
         <div className="flex items-center flex-1">
-          <span className="text-3xl font-bold">Logo</span>
+          <span className="text-3xl font-bold"><VscTerminal /></span>
         </div>
         <div className="lg:flex md:flex lg:flex-1 items center justify-end font-normal hidden">
           <div className="flex-10">
