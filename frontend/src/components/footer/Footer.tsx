@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 
 const Footer: React.FC = () => {
 
@@ -45,28 +45,23 @@ const Footer: React.FC = () => {
           </div>
           <div className="mb-4 md:mb-0">
             <h2 className="text-[22px] font-semibold text-pink-500 py-2 uppercase">Contact</h2>
-            <p className="text-[16px] my-4">Email: youremail.gmail.com</p>
-            <p className="text-[16px] my-4">Phone: +1 113-456-7890 </p>
+            <p className="text-[16px] my-4">Email: rigomartinez@udec.cl</p>
+            <p className="text-[16px] my-4">WhatsApp: +1(210)6988-222 </p>
             <div className="flex space-x-4">
               <a
-                className="text-white hover:text-pink-500 transform hover:scale-150 
-                            transition-all duration-150 ease-in-out" href="">
+                className="text-white hover:text-pink-500 transform hover:scale-150 transition-all duration-150 ease-in-out"
+                href="https://github.com/rigobersio" target="_blank" rel="noopener noreferrer">
                 <FaGithub />
               </a>
               <a
-                className="text-white hover:text-pink-500 transform hover:scale-150
-                             transition-all duration-150 ease-in-out" href="">
+                className="text-white hover:text-pink-500 transform hover:scale-150 transition-all duration-150 ease-in-out" 
+                href="https://www.linkedin.com/in/rigoberto-martinez/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedinIn />
               </a>
               <a
-                className="text-white hover:text-pink-500 transform hover:scale-150
-                             transition-all duration-150 ease-in-out" href="">
-                <FaTwitter />
-              </a>
-              <a
-                className="text-white hover:text-pink-500 transform hover:scale-150
-                             transition-all duration-150 ease-in-out" href="">
-                <FaInstagram />
+                className="text-white hover:text-pink-500 transform hover:scale-150 transition-all duration-150 ease-in-out" 
+                href="https://wa.link/ivnase" target="_blank" rel="noopener noreferrer">
+                <FaWhatsapp />
               </a>
             </div>
           </div>
