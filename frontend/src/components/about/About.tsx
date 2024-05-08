@@ -3,6 +3,8 @@ import { FaGithub, FaWhatsapp } from "react-icons/fa";
 import { ImLinkedin } from "react-icons/im";
 import { useInView } from "react-intersection-observer";
 
+import PdfViewCV from "../pdfViewCV/PdfViewCV";
+
 const About: React.FC = () => {
   const [isIntroVisible, setIsIntroVisible] = useState(false);
   const [isAboutMeVisible, setIsAboutMeVisible] = useState(false);
@@ -20,6 +22,10 @@ const About: React.FC = () => {
     setIsAboutMeVisible(isAboutMeInView);
   }, [isIntroInView, isAboutMeInView]);
 
+  const openPdfView = () => {
+    window.open(<PdfViewCV />, "_blank");
+  };
+
   return (
     <div className="text-center pt-10 pb-20 lg:w-full">
       <div className="relative top-10">
@@ -28,7 +34,7 @@ const About: React.FC = () => {
         {isIntroVisible && (
           <p className="w-3/4 mx-auto">I am a web developer, que no sabe demasiado ingles, por lo tanto, te invito a descargar mi CV en castellano.</p>
         )}
-        <button className="gap-2 px-[20px] py-[5px] rounded mt-6 bg-[#1484d6] border border-[#0e0e0f] transition-all duration-700 hover:bg-transparent hover:text-[#1484d6]">Descarga mi CV</button>
+        <button className="gap-2 px-[20px] py-[5px] rounded mt-6 bg-[#1484d6] border border-[#0e0e0f] transition-all duration-700 hover:bg-transparent hover:text-[#1484d6] onClick={openPdfView}">Descarga mi CV</button>
         <div>
           <div className="flex gap-10 justify-center mt-5">
             <a className=" hover:text-blue-950 transform hover:scale-150 transition-all duration-150 ease-in-out"
@@ -78,3 +84,8 @@ const About: React.FC = () => {
 };
 
 export default About;
+
+
+/*
+<HiDownload className='opacity-60 group-hover:translate-y-1 transition' />
+*/
