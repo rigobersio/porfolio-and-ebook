@@ -25,6 +25,7 @@ const About: React.FC = () => {
   }, [isIntroInView, isAboutMeInView]);
 
   //const navigate = useNavigate();
+  /*
   const openPdfView = () => {
     const newWindow = window.open("/holamundo", "_blank");
     if (newWindow) {
@@ -35,7 +36,7 @@ const About: React.FC = () => {
       console.error("No se pudo abrir una nueva ventana.");
     }
   };
-
+*/
   return (
     <div className="text-center pt-10 pb-20 lg:w-full">
       <div className="relative top-10">
@@ -44,7 +45,7 @@ const About: React.FC = () => {
         {isIntroVisible && (
           <p className="w-3/4 mx-auto">I am a web developer, que no sabe demasiado ingles, por lo tanto, te invito a descargar mi CV en castellano.</p>
         )}
-        <button className="gap-2 px-[20px] py-[5px] rounded mt-6 bg-[#1484d6] border border-[#0e0e0f] transition-all duration-700 hover:bg-transparent hover:text-[#1484d6] " onClick={openPdfView}>Descarga mi CV</button>
+        {/*<button className="gap-2 px-[20px] py-[5px] rounded mt-6 bg-[#1484d6] border border-[#0e0e0f] transition-all duration-700 hover:bg-transparent hover:text-[#1484d6] " onClick={openPdfView}>Descarga mi CV</button>*/}
 
         <a
           href="/holamundo"
