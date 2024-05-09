@@ -23,7 +23,13 @@ const About: React.FC = () => {
   }, [isIntroInView, isAboutMeInView]);
 
   const openPdfView = () => {
-    window.open(<PdfViewCV />, "_blank");
+    const newWindow = window.open("", "_blank");
+    if (newWindow) {
+      newWindow.document.body.innerHTML = ""; // Limpia el contenido de la nueva ventana
+      ReactDOM.render(<PdfViewCV />, newWindow.document.body); // Renderiza PdfViewCV en la nueva ventana
+    } else {
+      console.error("No se pudo abrir una nueva ventana.");
+    }
   };
 
   return (

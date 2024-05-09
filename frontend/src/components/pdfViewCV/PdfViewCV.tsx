@@ -1,12 +1,14 @@
 import React from "react";
+import { Document, Page, StyleSheet, pdf } from "@react-pdf/renderer";
 
-import { Document, Page, Text, View, StyleSheet } from '@react-pdf/renderer';
+// Importa el archivo PDF
+import CV from "./Rigoberto-CV-develop_C.pdf";
 
-// Create styles
+// Estilos
 const styles = StyleSheet.create({
   page: {
-    flexDirection: 'row',
-    backgroundColor: '#E4E4E4',
+    flexDirection: "row",
+    backgroundColor: "#ffffff",
   },
   section: {
     margin: 10,
@@ -15,18 +17,30 @@ const styles = StyleSheet.create({
   },
 });
 
-// Create Document Component
-const PdfViewCV: React.FC = () => (
-  <Document>
-    <Page size="A4" style={styles.page}>
-      <View style={styles.section}>
-        <Text>Section #1</Text>
-      </View>
-      <View style={styles.section}>
-        <Text>Section #2</Text>
-      </View>
-    </Page>
-  </Document>
-);
+const PdfViewCV: React.FC = () => {
+  // Función para generar y descargar el PDF
+  const handleDownloadPDF = async () => {
+    const blob = await pdf(<Document file={CV} />);
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "CV.pdf";
+    link.click();
+  };
+
+  return (
+    <>
+      {/* Botón para descargar el PDF */}
+      <button onClick={handleDownloadPDF}>Descargar CV</button>
+
+      {/* Renderizar el documento PDF */}
+      <Document file={CV}>
+        <Page size="A4" style={styles.page}>
+          {/* Agregar contenido adicional si es necesario */}
+        </Page>
+      </Document>
+    </>
+  );
+};
 
 export default PdfViewCV;
