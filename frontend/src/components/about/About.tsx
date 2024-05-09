@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react";
 import { FaGithub, FaWhatsapp } from "react-icons/fa";
 import { ImLinkedin } from "react-icons/im";
 import { useInView } from "react-intersection-observer";
+//import { useNavigate } from "react-router-dom";
 
-import PdfViewCV from "../pdfViewCV/PdfViewCV";
+//import PdfViewCV from "../pdfViewCV/PdfViewCV";
+
 
 const About: React.FC = () => {
   const [isIntroVisible, setIsIntroVisible] = useState(false);
@@ -22,12 +24,14 @@ const About: React.FC = () => {
     setIsAboutMeVisible(isAboutMeInView);
   }, [isIntroInView, isAboutMeInView]);
 
+  //const navigate = useNavigate();
   const openPdfView = () => {
-    const newWindow = window.open("", "_blank");
+    const newWindow = window.open("/holamundo", "_blank");
     if (newWindow) {
-      newWindow.document.body.innerHTML = ""; // Limpia el contenido de la nueva ventana
-      ReactDOM.render(<PdfViewCV />, newWindow.document.body); // Renderiza PdfViewCV en la nueva ventana
+      // La nueva ventana se ha abierto correctamente
+      newWindow.focus();
     } else {
+      // No se pudo abrir la nueva ventana
       console.error("No se pudo abrir una nueva ventana.");
     }
   };
@@ -40,12 +44,24 @@ const About: React.FC = () => {
         {isIntroVisible && (
           <p className="w-3/4 mx-auto">I am a web developer, que no sabe demasiado ingles, por lo tanto, te invito a descargar mi CV en castellano.</p>
         )}
-        <button className="gap-2 px-[20px] py-[5px] rounded mt-6 bg-[#1484d6] border border-[#0e0e0f] transition-all duration-700 hover:bg-transparent hover:text-[#1484d6] onClick={openPdfView}">Descarga mi CV</button>
+        <button className="gap-2 px-[20px] py-[5px] rounded mt-6 bg-[#1484d6] border border-[#0e0e0f] transition-all duration-700 hover:bg-transparent hover:text-[#1484d6] " onClick={openPdfView}>Descarga mi CV</button>
+
+        <a
+          href="/holamundo"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="gap-2 px-[20px] py-[5px] rounded mt-6 bg-[#1484d6] border border-[#0e0e0f] transition-all duration-700 hover:bg-transparent hover:text-[#1484d6] inline-block"
+        >
+          Descarga mi CV
+        </a>
+
+
+
         <div>
           <div className="flex gap-10 justify-center mt-5">
             <a className=" hover:text-blue-950 transform hover:scale-150 transition-all duration-150 ease-in-out"
               href="https://github.com/rigobersio" target="_blank" rel="noopener noreferrer">
-              <FaGithub className='w-7 h-7 rounded'/>
+              <FaGithub className='w-7 h-7 rounded' />
             </a>
             <a className=" hover:text-sky-600 transform hover:scale-150 transition-all duration-150 ease-in-out"
               href="https://www.linkedin.com/in/rigoberto-martinez/" target="_blank" rel="noopener noreferrer">
@@ -90,8 +106,3 @@ const About: React.FC = () => {
 };
 
 export default About;
-
-
-/*
-<HiDownload className='opacity-60 group-hover:translate-y-1 transition' />
-*/
