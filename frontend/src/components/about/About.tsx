@@ -48,7 +48,7 @@ const About: React.FC = () => {
         {/*<button className="gap-2 px-[20px] py-[5px] rounded mt-6 bg-[#1484d6] border border-[#0e0e0f] transition-all duration-700 hover:bg-transparent hover:text-[#1484d6] " onClick={openPdfView}>Descarga mi CV</button>*/}
 
         <a
-          href="/holamundo"
+          href="/cv"
           target="_blank"
           rel="noopener noreferrer"
           className="gap-2 px-[20px] py-[5px] rounded mt-6 bg-[#1484d6] border border-[#0e0e0f] transition-all duration-700 hover:bg-transparent hover:text-[#1484d6] inline-block"
