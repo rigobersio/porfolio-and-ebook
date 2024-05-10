@@ -1,10 +1,11 @@
 import React from "react";
-import { Document, Page, StyleSheet, pdf } from "@react-pdf/renderer";
+//import { Page, Text, View, Document, StyleSheet } from "@react-pdf/renderer";
 
-// Importa el archivo PDF
+//Importa el archivo PDF
 import CV from "./Rigoberto-CV-develop_C.pdf";
 
 // Estilos
+/*
 const styles = StyleSheet.create({
   page: {
     flexDirection: "row",
@@ -16,7 +17,7 @@ const styles = StyleSheet.create({
     flexGrow: 1,
   },
 });
-
+*/
 //const PDF_FILE_URL: string = "http://localhost:5173/dowloader-cv";
 const PDF_FILE_URL: string = CV;
 
@@ -56,17 +57,23 @@ const PdfViewCV: React.FC = () => {
             Descarga mi CV
           </button>
         </div>
-        <div>
-          {/* Renderizar el documento PDF */}
-          <Document file={CV}>
-            <Page size="A4" style={styles.page}>
-              {/* Agregar contenido adicional si es necesario */}
-            </Page>
-          </Document>
-        </div>
+        
       </div>
     </>
   );
 };
 
 export default PdfViewCV;
+
+
+
+//<div>
+ //         {/* Renderizar el documento PDF */}
+//          <Document file={CV}>
+ //           <Page size="A4" style={styles.page}>
+ //             {/* Agregar contenido adicional si es necesario */}
+ //             <Text>CV</Text>
+ //           </Page>
+ //         </Document>
+ //       </div>
+
