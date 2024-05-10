@@ -1,5 +1,5 @@
 import React from 'react';
-import PDFFile from './Rigoberto-CV-develop_C.pdf';
+import PDFFile from './Rigoberto-CV-develop_SPA.pdf';
 
 const PdfBlanco: React.FC = () => {
     
