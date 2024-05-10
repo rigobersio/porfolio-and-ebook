@@ -1,5 +1,10 @@
 import React from "react";
 //import { Page, Text, View, Document, StyleSheet } from "@react-pdf/renderer";
+// Import the main component
+import { Viewer } from '@react-pdf-viewer/core';
+
+// Import the styles
+import '@react-pdf-viewer/core/lib/styles/index.css';
 
 //Importa el archivo PDF
 import CV from "./Rigoberto-CV-develop_C.pdf";
@@ -23,7 +28,7 @@ const PDF_FILE_URL: string = CV;
 
 const PdfViewCV: React.FC = () => {
   // Función para generar y descargar el PDF
-  const dowloaderFileAtURL = (url: string) => {
+  const downloaderFileAtURL = (url: string) => {
     const fileName: string = url.split("/").pop();
     //const fileName: string = "Rigoberto-CV-develop_C.pdf";
 
@@ -51,13 +56,20 @@ const PdfViewCV: React.FC = () => {
       <div>
         <div>
           <button
-            onClick={() => dowloaderFileAtURL(PDF_FILE_URL)}
+            onClick={() => downloaderFileAtURL(PDF_FILE_URL)}
             className="gap-2 px-[20px] py-[5px] rounded mt-6 bg-[#1484d6] border border-[#0e0e0f] transition-all duration-700 hover:bg-transparent hover:text-[#1484d6] "
           >
             Descarga mi CV
           </button>
         </div>
-        
+        <div
+    style={{
+        border: '1px solid rgba(0, 0, 0, 0.3)',
+        height: '750px',
+    }}
+>
+    <Viewer fileUrl="./Rigoberto-CV-develop_C.pdf" />
+</div>
       </div>
     </>
   );
