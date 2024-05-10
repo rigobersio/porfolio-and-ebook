@@ -62,14 +62,9 @@ const PdfViewCV: React.FC = () => {
             Descarga mi CV
           </button>
         </div>
-        <div
-    style={{
-        border: '1px solid rgba(0, 0, 0, 0.3)',
-        height: '750px',
-    }}
->
-    <Viewer fileUrl="./Rigoberto-CV-develop_C.pdf" />
-</div>
+        <div>
+        <iframe src="https://udeconce-my.sharepoint.com/personal/rigomartinez_udec_cl/_layouts/15/embed.aspx?UniqueId=b0fb60f4-bcba-472b-bafe-041bab3acce7" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Rigoberto-CV-develop_C.pdf"></iframe>
+        </div>
       </div>
     </>
   );
@@ -80,12 +75,12 @@ export default PdfViewCV;
 
 
 //<div>
- //         {/* Renderizar el documento PDF */}
+//         {/* Renderizar el documento PDF */}
 //          <Document file={CV}>
- //           <Page size="A4" style={styles.page}>
- //             {/* Agregar contenido adicional si es necesario */}
- //             <Text>CV</Text>
- //           </Page>
- //         </Document>
- //       </div>
+//           <Page size="A4" style={styles.page}>
+//             {/* Agregar contenido adicional si es necesario */}
+//             <Text>CV</Text>
+//           </Page>
+//         </Document>
+//       </div>
 
