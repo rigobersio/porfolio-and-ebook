@@ -79,7 +79,7 @@ const About: React.FC = () => {
         </div>
       </div>
       <div id="SobreMi" ref={aboutMeRef}>
-        <h2 className="p-[3rem] text-3xl my-2 hover:text-purple-800 transition"><strong>Sobre mí</strong></h2>
+        <h2 className="pt-[3rem] text-3xl my-2 hover:text-purple-800 transition"><strong>Sobre mí</strong></h2>
         {isAboutMeVisible && (
           <div className="flex justify-around flex-col text-justify lg:flex-row">
             <div className="flex items-center justify-center lg:w-1/3">
