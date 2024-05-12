@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { FaGithub } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 
 const Projects: React.FC = () => {
@@ -20,11 +21,21 @@ const Projects: React.FC = () => {
       {isProjectsVisible && (
         <div className="text-justify">
           <div className="mb-5 border-gradient-to-r border-2 from-purple-500 via-pink-500 to-red-500 rounded-md p-3 outline-none">
-
+          <h3 className="text-left text-amber-950  text-2xl my-2 hover:text-neutral-900 transition"><strong>Rentify</strong></h3>
+          
+            <div className="flex gap-10 justify-center mt-5">
+            <a className=" hover:text-blue-950 transform hover:scale-150 transition-all duration-150 ease-in-out"
+              href="https://github.com/jlcarrascof/PF-Henry-Project" target="_blank" rel="noopener noreferrer">
+              <FaGithub className='w-5 h-5 rounded' />
+            </a>
+            </div>
             <p className="p-4 mx-auto animate-fade-right animate-once animate-duration-[4000ms]">El proyecto se desarrolló en equipo utilizando una metodología de trabajo scrum para desarrollar una aplicación
               web para alquiler de habitaciones de hoteles. Trabajamos de forma asíncrona en un contexto remoto e
-              internacional, colaborando en el manejo de tareas y gitflow para evitar conflictos en el código. Me asignaron
-              responsabilidades tanto en el desarrollo del backend como en la creación de componentes frontend.</p>
+              internacional, colaborando en el manejo de tareas y gitflow para evitar conflictos en el código.</p>
+            
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/s6R8OEWOsV4?si=zD5xsDkKZrQxqe9E" title="Rentify" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+             
           </div>
 
           <div className="pb-2 border-gradient-to-r border-2 from-purple-500 via-pink-500 to-red-500 rounded-md p-3 outline-none">
