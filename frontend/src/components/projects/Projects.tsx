@@ -33,7 +33,9 @@ const Projects: React.FC = () => {
               web para alquiler de habitaciones de hoteles. Trabajamos de forma asíncrona en un contexto remoto e
               internacional, colaborando en el manejo de tareas y gitflow para evitar conflictos en el código.</p>
             
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/s6R8OEWOsV4?si=zD5xsDkKZrQxqe9E" title="Rentify" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div className="animate-flip-up animate-once animate-duration-[5500ms]">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/s6R8OEWOsV4?si=zD5xsDkKZrQxqe9E" title="Rentify" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
 
              
           </div>
