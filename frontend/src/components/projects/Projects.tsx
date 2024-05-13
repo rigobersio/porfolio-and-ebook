@@ -26,7 +26,7 @@ const Projects: React.FC = () => {
     dots: true,
     infinite: true,
     autoplay: true,
-    speed: 500,
+    speed: 700,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
@@ -80,23 +80,23 @@ const Projects: React.FC = () => {
                 en formato de cartas individuales. La aplicación ofrece una interfaz intuitiva con filtros, barra de búsqueda y
                 formularios seguros para la publicación de nuevos corredores</p>
 
-
+              <div className="p-2 w-80 h-80 sm:w-96 sm:h-60 relative rounded-2xl overflow-hidden animate-fade animate-once animate-duration-[6000ms]">
+                <Slider {...carouselSettings}>
+                  {carouselImages.map((image, index) => (
+                    <div key={index}>
+                      <img className="w-full h-full object-cover rounded-2xl" src={image} alt={`Carrusel de imágenes. Imagen ${index + 1}`}
+                      />
+                    </div>
+                  ))}
+                </Slider>
+              </div>
 
 
             </div>
           </div>
         </div>
       )}
-      <div className="p-16 w-80 h-80 sm:w-96 sm:h-60 relative rounded-2xl overflow-hidden">
-        <Slider {...carouselSettings}>
-          {carouselImages.map((image, index) => (
-            <div key={index}>
-              <img className="w-full h-full object-cover rounded-2xl" src={image} alt={`Carrusel de imágenes. Imagen ${index + 1}`}
-              />
-            </div>
-          ))}
-        </Slider>
-      </div>
+
 
     </div>
 
