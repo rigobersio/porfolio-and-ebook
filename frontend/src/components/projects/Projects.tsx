@@ -41,12 +41,12 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <div id="Proyectos" className="w-[100vh] flex flex-col items-center justify-center" ref={projectsRef}>
+    <div id="Proyectos" className="lg:w-2/3 sm:w-auto flex flex-col items-center justify-center" ref={projectsRef}>
       <h2 className="text-center p-[2rem] text-3xl my-2 hover:text-purple-800 transition animate-fade-up animate-once animate-duration-[3500ms]"><strong>Mis Proyectos</strong></h2>
       {isProjectsVisible && (
         <div className="text-justify">
           <div className="mb-5 border-gradient-to-r border-2 from-purple-500 via-pink-500 to-red-500 rounded-md p-3 outline-none">
-            <h3 className="text-left text-amber-950  text-2xl my-2 hover:text-neutral-900 transition"><strong>Rentify</strong></h3>
+            <h3 className="w-3/4 mx-auto text-left text-amber-950  text-2xl my-2 hover:text-neutral-900 transition"><strong>Rentify</strong></h3>
 
             <div className="flex gap-10 justify-center mt-5">
               <a className=" hover:text-blue-950 transform hover:scale-150 transition-all duration-150 ease-in-out"
@@ -54,12 +54,14 @@ const Projects: React.FC = () => {
                 <FaGithub className='w-5 h-5 rounded' />
               </a>
             </div>
-            <p className="p-4 mx-auto animate-fade-right animate-once animate-duration-[4000ms]">El proyecto se desarrolló en equipo utilizando una metodología de trabajo scrum para desarrollar una aplicación
+            <p className="p-4 w-3/4 mx-auto animate-fade-right animate-once animate-duration-[4000ms]">El proyecto se desarrolló en equipo utilizando una metodología de trabajo scrum para desarrollar una aplicación
               web para alquiler de habitaciones de hoteles. Trabajamos de forma asíncrona en un contexto remoto e
               internacional, colaborando en el manejo de tareas y gitflow para evitar conflictos en el código.</p>
 
-            <div className="animate-flip-up animate-once animate-duration-[5500ms]">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/s6R8OEWOsV4?si=zD5xsDkKZrQxqe9E" title="Rentify" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div className="p-2 w-3/4 mx-auto animate-flip-up animate-once animate-duration-[5500ms]">
+              <div className="aspect-w-16 aspect-h-19">
+                <iframe className=" rounded-lg" src="https://www.youtube.com/embed/s6R8OEWOsV4?si=zD5xsDkKZrQxqe9E" title="Rentify" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
             </div>
 
 
@@ -67,7 +69,7 @@ const Projects: React.FC = () => {
           {/*</>*/}
           <div className="text-justify">
             <div className="mb-5 border-gradient-to-r border-2 from-purple-500 via-pink-500 to-red-500 rounded-md p-3 outline-none">
-              <h3 className="text-left text-amber-950  text-2xl my-2 hover:text-neutral-900 transition"><strong>Drivers</strong></h3>
+              <h3 className="w-3/4 mx-auto text-left text-amber-950  text-2xl my-2 hover:text-neutral-900 transition"><strong>Drivers</strong></h3>
 
               <div className="flex gap-10 justify-center mt-5">
                 <a className=" hover:text-blue-950 transform hover:scale-150 transition-all duration-150 ease-in-out"
@@ -75,12 +77,12 @@ const Projects: React.FC = () => {
                   <FaGithub className='w-5 h-5 rounded' />
                 </a>
               </div>
-              <p className="p-4 mx-auto animate-fade-right animate-once animate-duration-[4000ms]">Drivers es una App Web desarrollada de forma individual utilizando una metodología scrum. Esta es una single
+              <p className="p-4 w-3/4  mx-auto animate-fade-right animate-once animate-duration-[4000ms]">Drivers es una App Web desarrollada de forma individual utilizando una metodología scrum. Esta es una single
                 page application (SPA) de corredores de Fórmula Uno para visualizar información detallada de estos corredores
                 en formato de cartas individuales. La aplicación ofrece una interfaz intuitiva con filtros, barra de búsqueda y
                 formularios seguros para la publicación de nuevos corredores</p>
 
-              <div className="p-2 w-80 h-80 sm:w-96 sm:h-60 relative rounded-2xl overflow-hidden animate-fade animate-once animate-duration-[6000ms]">
+              <div className="p-2 w-80 h-80 sm:w-96 sm:h-60 ml-24 relative rounded-2xl overflow-hidden animate-fade animate-once animate-duration-[6000ms]">
                 <Slider {...carouselSettings}>
                   {carouselImages.map((image, index) => (
                     <div key={index}>
