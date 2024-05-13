@@ -1,4 +1,10 @@
 import React, { useState, useEffect } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+//import "./Projects.css";
+
 import { FaGithub } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 
@@ -15,39 +21,82 @@ const Projects: React.FC = () => {
     setIsProjectsVisible(isProjectsInView);
   }, [isProjectsInView]);
 
+
+  const carouselSettings = {
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
+  const carouselImages: string[] = [
+    "https://res.cloudinary.com/dqh2illb5/image/upload/v1715556450/drivers_SPA/12-5-2024__tsxipx.jpg",
+    "https://res.cloudinary.com/dqh2illb5/image/upload/v1715556450/drivers_SPA/12-5-2024_2_ohny2a.jpg",
+    "https://res.cloudinary.com/dqh2illb5/image/upload/v1715556450/drivers_SPA/12-5-2024_5_qfolkd.jpg",
+    "https://res.cloudinary.com/dqh2illb5/image/upload/v1715556450/drivers_SPA/12-5-2024_3_v49fgd.jpg",
+    "https://res.cloudinary.com/dqh2illb5/image/upload/v1715556450/drivers_SPA/12-5-2024_4_cwysrk.jpg",
+    "https://res.cloudinary.com/dqh2illb5/image/upload/v1715556450/drivers_SPA/12-5-2024_6_bzqfou.jpg"
+  ];
+
   return (
     <div id="Proyectos" className="w-[100vh] flex flex-col items-center justify-center" ref={projectsRef}>
       <h2 className="text-center p-[2rem] text-3xl my-2 hover:text-purple-800 transition animate-fade-up animate-once animate-duration-[3500ms]"><strong>Mis Proyectos</strong></h2>
       {isProjectsVisible && (
         <div className="text-justify">
           <div className="mb-5 border-gradient-to-r border-2 from-purple-500 via-pink-500 to-red-500 rounded-md p-3 outline-none">
-          <h3 className="text-left text-amber-950  text-2xl my-2 hover:text-neutral-900 transition"><strong>Rentify</strong></h3>
-          
+            <h3 className="text-left text-amber-950  text-2xl my-2 hover:text-neutral-900 transition"><strong>Rentify</strong></h3>
+
             <div className="flex gap-10 justify-center mt-5">
-            <a className=" hover:text-blue-950 transform hover:scale-150 transition-all duration-150 ease-in-out"
-              href="https://github.com/jlcarrascof/PF-Henry-Project" target="_blank" rel="noopener noreferrer">
-              <FaGithub className='w-5 h-5 rounded' />
-            </a>
+              <a className=" hover:text-blue-950 transform hover:scale-150 transition-all duration-150 ease-in-out"
+                href="https://github.com/jlcarrascof/PF-Henry-Project" target="_blank" rel="noopener noreferrer">
+                <FaGithub className='w-5 h-5 rounded' />
+              </a>
             </div>
             <p className="p-4 mx-auto animate-fade-right animate-once animate-duration-[4000ms]">El proyecto se desarrolló en equipo utilizando una metodología de trabajo scrum para desarrollar una aplicación
               web para alquiler de habitaciones de hoteles. Trabajamos de forma asíncrona en un contexto remoto e
               internacional, colaborando en el manejo de tareas y gitflow para evitar conflictos en el código.</p>
-            
+
             <div className="animate-flip-up animate-once animate-duration-[5500ms]">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/s6R8OEWOsV4?si=zD5xsDkKZrQxqe9E" title="Rentify" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/s6R8OEWOsV4?si=zD5xsDkKZrQxqe9E" title="Rentify" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
 
-             
-          </div>
 
-          <div className="pb-2 border-gradient-to-r border-2 from-purple-500 via-pink-500 to-red-500 rounded-md p-3 outline-none">
-            <p className="p-4 mx-auto animate-fade-left animate-once animate-duration-[5000ms]">Drivers es una App Web desarrollada de forma individual utilizando una metodología scrum. Esta es una single
-              page application (SPA) de corredores de Fórmula Uno para visualizar información detallada de estos corredores
-              en formato de cartas individuales. La aplicación ofrece una interfaz intuitiva con filtros, barra de búsqueda y
-              formularios seguros para la publicación de nuevos corredores</p>
+          </div>
+          {/*</>*/}
+          <div className="text-justify">
+            <div className="mb-5 border-gradient-to-r border-2 from-purple-500 via-pink-500 to-red-500 rounded-md p-3 outline-none">
+              <h3 className="text-left text-amber-950  text-2xl my-2 hover:text-neutral-900 transition"><strong>Drivers</strong></h3>
+
+              <div className="flex gap-10 justify-center mt-5">
+                <a className=" hover:text-blue-950 transform hover:scale-150 transition-all duration-150 ease-in-out"
+                  href="https://github.com/rigobersio/pi-drivers-main" target="_blank" rel="noopener noreferrer">
+                  <FaGithub className='w-5 h-5 rounded' />
+                </a>
+              </div>
+              <p className="p-4 mx-auto animate-fade-right animate-once animate-duration-[4000ms]">Drivers es una App Web desarrollada de forma individual utilizando una metodología scrum. Esta es una single
+                page application (SPA) de corredores de Fórmula Uno para visualizar información detallada de estos corredores
+                en formato de cartas individuales. La aplicación ofrece una interfaz intuitiva con filtros, barra de búsqueda y
+                formularios seguros para la publicación de nuevos corredores</p>
+
+
+
+
+            </div>
           </div>
         </div>
       )}
+      <div className="p-16 w-80 h-80 sm:w-96 sm:h-60 relative rounded-2xl overflow-hidden">
+        <Slider {...carouselSettings}>
+          {carouselImages.map((image, index) => (
+            <div key={index}>
+              <img className="w-full h-full object-cover rounded-2xl" src={image} alt={`Carrusel de imágenes. Imagen ${index + 1}`}
+              />
+            </div>
+          ))}
+        </Slider>
+      </div>
 
     </div>
 
