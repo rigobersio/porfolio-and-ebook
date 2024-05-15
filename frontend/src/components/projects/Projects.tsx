@@ -122,7 +122,6 @@ const Projects: React.FC = () => {
         </div>
       )}
 
-
     </div>
 
   );

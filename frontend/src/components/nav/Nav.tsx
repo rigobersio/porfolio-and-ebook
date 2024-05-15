@@ -19,6 +19,9 @@ const Nav: React.FC = () => {
           <li className="my-4 py-4 border-slate-800 hover:bg-slate-800 hover:rounded">Sobre mí</li>
         </LinkScroll>
         <LinkRouter to="/book">
+        <LinkScroll spy={true} smooth={true} to="Skills">
+          <li className="my-4 py-4 border-slate-800 hover:bg-slate-800 hover:rounded">Skills</li>
+        </LinkScroll>
           <li className="my-4 py-4 border-slate-800 hover:bg-slate-800 hover:rounded">Lee mi Libro</li>
         </LinkRouter>
         <LinkScroll spy={true} smooth={true} to="contact">
@@ -42,6 +45,9 @@ const Nav: React.FC = () => {
               </LinkScroll>
               <LinkScroll spy={true} smooth={true} to="SobreMi">
                 <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">Sobre mi</li>
+              </LinkScroll>
+              <LinkScroll spy={true} smooth={true} to="Skills">
+                <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">Skills</li>
               </LinkScroll>
               <LinkRouter to="/book">
                 <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">Lee mi Libro</li>
