@@ -41,7 +41,7 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <div id="Proyectos" className="lg:w-2/3 sm:w-auto flex flex-col items-center justify-center" ref={projectsRef}>
+    <div id="Proyectos" className=" flex flex-col items-center justify-center" ref={projectsRef}>
       <h2 className="text-center p-[2rem] text-3xl my-2 hover:text-purple-800 transition animate-fade-up animate-once animate-duration-[3500ms]"><strong>Mis Proyectos</strong></h2>
       {isProjectsVisible && (
         <div className="text-justify">
@@ -97,7 +97,7 @@ const Projects: React.FC = () => {
                 formularios seguros para la publicación de nuevos corredores</p>
 
               <div className="p-2 w-80 h-80 sm:w-96 sm:h-60 ml-24 relative rounded-2xl overflow-hidden animate-fade animate-once animate-duration-[6000ms]">
-                <Slider {...carouselSettings}>
+                <Slider className="" {...carouselSettings}>
                   {carouselImages.map((image, index) => (
                     <div key={index}>
                       <img className="w-full h-full object-cover rounded-2xl" src={image} alt={`Carrusel de imágenes. Imagen ${index + 1}`}
@@ -123,7 +123,6 @@ const Projects: React.FC = () => {
       )}
 
     </div>
-
   );
 };
 
