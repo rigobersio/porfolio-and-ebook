@@ -3,6 +3,17 @@ import React, { useState, useEffect } from "react";
 
 import { useInView } from "react-intersection-observer";
 
+import IconJS from "../icons/LogosJavascript";
+import IconTS from "../icons/DeviconTypescript";
+import IconReact from "../icons/SkillIconsReactDark";
+import IconRedux from "../icons/TablerBrandRedux";
+import IconNode from "../icons/DeviconNodejsWordmark";
+import IconExpress from "../icons/SkillIconsExpressjsDark";
+import IconPostgre from "../icons/DeviconPostgresql";
+import IconGit from "../icons/VscodeIconsFileTypeGit";
+import IconGitHub from "../icons/AkarIconsGithubFill";
+import IconWindows from "../icons/DeviconWindows11";
+import IconLinux from "../icons/LogosLinuxTux";
 const Skills: React.FC = () => {
   const [isSkillsVisible, setIsSkillsVisible] = useState(false);
 
@@ -22,7 +33,20 @@ const Skills: React.FC = () => {
       <div className="flex justify-center items-center h-screen">
       <div className="bg-gray-200 rounded-full p-8 md:p-12 lg:p-16 shadow-lg">
         <div className="bg-white rounded-full p-8 md:p-12 lg:p-16 flex flex-wrap justify-center items-center gap-4 md:gap-6 lg:gap-8">
-          <h4>hola</h4>
+
+          <IconJS />
+          <IconTS />
+          <IconReact />
+          <IconRedux />
+          <IconNode />
+          <IconExpress />
+          <IconPostgre />
+          <IconGit />
+          <IconGitHub />
+          <IconWindows />
+          <IconLinux />
+
+
         </div>
       </div>
     </div>
