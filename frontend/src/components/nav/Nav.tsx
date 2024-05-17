@@ -15,7 +15,7 @@ const Nav: React.FC = () => {
         <LinkScroll spy={true} smooth={true} to="Proyectos">
           <li className="my-4 py-4 border-slate-800 hover:bg-slate-800 hover:rounded">Proyectos</li>
         </LinkScroll>
-        <LinkScroll spy={true} smooth={true} to="about">
+        <LinkScroll spy={true} smooth={true} to="SobreMi">
           <li className="my-4 py-4 border-slate-800 hover:bg-slate-800 hover:rounded">Sobre mí</li>
         </LinkScroll>
         <LinkRouter to="/book">
