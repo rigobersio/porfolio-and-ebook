@@ -28,7 +28,9 @@ const Skills: React.FC = () => {
 
   return (
     <div id="Skills" className="lg:w-2/3 sm:w-auto flex flex-col items-center justify-center" ref={skillsRef}>
-      <h2 className="text-center pt-[2rem] text-3xl  hover:text-purple-800 transition animate-fade-up animate-once animate-duration-[3500ms]"><strong>Tecnologías que he ocupado</strong></h2>
+      <h2 className="text-center pt-[2rem] text-3xl  hover:text-purple-800 transition animate-fade-up animate-once animate-duration-[3500ms]">
+        <strong>Estas son algunas de las tecnologías que he ocupado</strong>
+      </h2>
       {isSkillsVisible && (
       <div className="flex justify-center items-center m-12 animate-wiggle animate-infinite animate-duration-[23000ms]">
       <div className="bg-gray-200 rounded-full p-3 lg:p-2 shadow-lg">
