@@ -8,21 +8,16 @@ import { useInView } from "react-intersection-observer";
 
 
 const Ebook: React.FC = () => {
-  const [isIntroVisible, setIsIntroVisible] = useState(false);
   const [isEbookMeVisible, setIsEbookMeVisible] = useState(false);
-  const { ref: introRef, inView: isIntroInView } = useInView({
-    threshold: 0.5,
-    triggerOnce: true,
-  });
+
   const { ref: EbookMeRef, inView: isEbookMeInView } = useInView({
     threshold: 0.5,
     triggerOnce: true,
   });
 
   useEffect(() => {
-    setIsIntroVisible(isIntroInView);
     setIsEbookMeVisible(isEbookMeInView);
-  }, [isIntroInView, isEbookMeInView]);
+  }, [isEbookMeInView]);
 
   
   return (
@@ -31,22 +26,31 @@ const Ebook: React.FC = () => {
       <div id="Ebook" ref={EbookMeRef}>
         <h2 className="pt-[3rem] text-3xl my-2 hover:text-purple-800 transition"><strong>Facultad Prosôdica: Departamento de Economía y Menaje</strong></h2>
         {isEbookMeVisible && (
-          <div className="flex justify-around flex-col text-justify lg:flex-row">
-            <div className="flex items-center justify-center lg:w-1/3">
-              <img className="object-cover object-center rounded-full h-60 w-60 animate-pulse animate-once animate-duration-[3500ms]" src="https://res.cloudinary.com/dqh2illb5/image/upload/v1715016763/myPerfil/1710771555673_Git-Hub_unujoi.jpg" alt="Imagen del programador" />
+          <div className="p-5 mr-10 flex justify-around flex-col text-justify lg:flex-row">
+            <div className="flex items-center justify-center lg:w-1/3 pl-8">
+              <img className="object-cover object-center rounded-r-xl animate-pulse animate-once animate-duration-[3500ms]" 
+              src="https://res.cloudinary.com/dqh2illb5/image/upload/v1716087229/misLibros/portadaJPGOriginal.jpg" alt="Imagen de la portada del libro" />
             </div>
+          
             <div className="lg:w-2/3">
               <p className="pt-6 w-3/4 mx-auto animate-fade animate-once animate-duration-[3000ms]">
-                Soy un apasionado del desarrollo web con un trasfondo en ciencias agronómicas que encontró su verdadera pasión en la vanguardia tecnológica. 💻
+              <strong>¡Descubre la singular y divertida Facultad Prosôdica en esta hilarante novela epistolar!</strong>
               </p>
               <p className="pt-6 w-3/4 mx-auto animate-fade animate-once animate-duration-[3500ms]">
-                Como Full Stack Web Developer Junior, me he decantado por tecnologías clave como <strong>JavaScript, TypeScript, React, Redux, Node, Express, PostgreSQL, Mongo y Git</strong>. Estas herramientas me han permitido crear aplicaciones web funcionales y atractivas. Al mismo tiempo, mi experiencia general en TI ocupando diferentes plataformas webs, programas de escritorio y sistemas operativos me ayudan a ampliar las posibilidades a la hora de solucionar problemas. 💼💻
+                Soy el autor de esta novela y como tal es mi deseo que puedas leerla de forma gratuita si así lo deseas. 😊 Esta es una novela epistolar que presenta la hilarante y absurda historia de la Facultad Prosôdica y sus académicos poco convencionales. A través de esta historia imaginaria, los personajes atraviesan una travesía con los problemas administrativos y económicos que enfrenta la facultad. La historia está narrada con un enfoque humorístico que recuerda al estilo del reconocido grupo Les Luthiers. 📚
               </p>
               <p className="pt-6 w-3/4 mx-auto animate-fade animate-once animate-duration-[4000ms]">
-                Mi experiencia en el programa de formación en desarrollo web en "Henry" me ha proporcionado una base sólida en la programación y la resolución de problemas, mientras que mi formación en ciencias agronómicas en la Universidad de Concepción me ha dotado de un enfoque analítico y orientado a soluciones. 🔍💡
+                Si eres fanático de las historias humorísticas y absurdas, especialmente aquellas que se desarrollan en un entorno académico lleno de personajes excéntricos y situaciones disparatadas, esta novela es definitivamente para ti. Desde problemas administrativos hilarantes 📋 hasta enredos económicos absurdos 💸, pasando por situaciones cotidianas que se convierten en auténticas locuras debido a la naturaleza de los personajes 🤪, esta historia te mantendrá riendo página tras página. 😄 ¡Prepárate para un viaje entretenido y absurdo, entre otros experimentos científicos inesperados! 🧪🔬📚
               </p>
               <p className="pt-6 w-3/4 mx-auto animate-fade animate-once animate-duration-[4500ms]">
-                Estoy en busca de nuevas oportunidades para aplicar mis habilidades y seguir creciendo profesionalmente, estoy emocionado por la posibilidad de colaborar en proyectos innovadores o formar parte de un equipo que comparta mi pasión por la tecnología. 🚀
+                <strong>Información de registro en Safe Creative:</strong> Identificador 2110309671233, 
+                fecha de registro 30-oct-2021 14:24 UTC, 
+                <strong> Licencia Creative Commons Attribution-NonCommercial-NoDerivatives 4.0.</strong>
+              <br />  
+              <br />
+                Declaraciones inscritas: <strong>Rigoberto Martínez Quintana</strong>, fecha 30-oct-2021.
+                <br />
+                Información disponible en la página de Safe Creative.
               </p>
             </div>
           </div>
