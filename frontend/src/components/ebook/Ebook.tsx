@@ -57,7 +57,7 @@ const Ebook: React.FC = () => {
               </p>
               <div className="flex flex-col items-center">
                 <a
-                  href="/holamundo"
+                  href="https://a.co/d/alnoKcJ"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-[200px] lg:w-[40%] px-[20px] py-[10px] rounded mt-8 bg-[#1484d6] border border-[#0e0e0f] transition-all duration-700 hover:bg-transparent hover:text-[#1484d6] inline-block text-center"
@@ -66,7 +66,7 @@ const Ebook: React.FC = () => {
                 </a>
 
                 <a
-                  href="/holamundo"
+                  href="/rigobertoebook"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-[200px] lg:w-[40%] px-[20px] py-[10px] rounded mt-8 bg-[#1484d6] border border-[#0e0e0f] transition-all duration-700 hover:bg-transparent hover:text-[#1484d6] inline-block text-center"
