@@ -1,5 +1,5 @@
 import React from "react";
-import { Link as LinkRouter } from 'react-router-dom';
+//import { Link as LinkRouter } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
 import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
@@ -18,12 +18,12 @@ const Nav: React.FC = () => {
         <LinkScroll spy={true} smooth={true} to="SobreMi">
           <li className="my-4 py-4 border-slate-800 hover:bg-slate-800 hover:rounded">Sobre mí</li>
         </LinkScroll>
-        <LinkRouter to="/book">
         <LinkScroll spy={true} smooth={true} to="Skills">
           <li className="my-4 py-4 border-slate-800 hover:bg-slate-800 hover:rounded">Skills</li>
         </LinkScroll>
+        <LinkScroll spy={true} smooth={true} to="Ebook">
           <li className="my-4 py-4 border-slate-800 hover:bg-slate-800 hover:rounded">Lee mi Libro</li>
-        </LinkRouter>
+        </LinkScroll>
         <LinkScroll spy={true} smooth={true} to="Contact">
           <li className="my-4 py-4 border-slate-800 hover:bg-slate-800 hover:rounded">Contacto</li>
         </LinkScroll>
@@ -49,9 +49,9 @@ const Nav: React.FC = () => {
               <LinkScroll spy={true} smooth={true} to="Skills">
                 <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">Skills</li>
               </LinkScroll>
-              <LinkRouter to="/book">
+              <LinkScroll spy={true} smooth={true} to="Ebook">
                 <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">Lee mi Libro</li>
-              </LinkRouter>
+              </LinkScroll>
               <LinkScroll spy={true} smooth={true} to="Contact">
                 <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">Contacto</li>
               </LinkScroll>

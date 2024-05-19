@@ -6,7 +6,7 @@ import About from '../about/About'
 import Projects from '../projects/Projects';
 import Skills from '../skills/Skills';
 //import Contact from '../contact/Contact';
-
+import Ebook from '../ebook/Ebook';
 
 const Porfolio: React.FC = () => {
 
@@ -22,6 +22,7 @@ const Porfolio: React.FC = () => {
             <Projects />
             <Skills />
             {/*<Contact />*/}
+            <Ebook />
           </div>
         </div>
         <Footer />
