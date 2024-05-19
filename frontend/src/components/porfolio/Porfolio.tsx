@@ -5,7 +5,7 @@ import Footer from '../footer/Footer'
 import About from '../about/About'
 import Projects from '../projects/Projects';
 import Skills from '../skills/Skills';
-import Contact from '../contact/Contact';
+//import Contact from '../contact/Contact';
 
 
 const Porfolio: React.FC = () => {
@@ -21,7 +21,7 @@ const Porfolio: React.FC = () => {
             <About />
             <Projects />
             <Skills />
-            <Contact />
+            {/*<Contact />*/}
           </div>
         </div>
         <Footer />

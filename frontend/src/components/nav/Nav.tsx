@@ -24,7 +24,7 @@ const Nav: React.FC = () => {
         </LinkScroll>
           <li className="my-4 py-4 border-slate-800 hover:bg-slate-800 hover:rounded">Lee mi Libro</li>
         </LinkRouter>
-        <LinkScroll spy={true} smooth={true} to="contact">
+        <LinkScroll spy={true} smooth={true} to="Contact">
           <li className="my-4 py-4 border-slate-800 hover:bg-slate-800 hover:rounded">Contacto</li>
         </LinkScroll>
       </ul>
@@ -37,7 +37,7 @@ const Nav: React.FC = () => {
         <div className="flex items-center flex-1">
           <span className="text-3xl font-bold"><VscTerminal /></span>
         </div>
-        <div className="lg:flex md:flex lg:flex-1 items center justify-end font-normal hidden">
+        <div className="lg:flex md:flex items center justify-end font-normal hidden">
           <div className="flex-10">
             <ul className="flex gap-8 mr-16 text-[18]">
               <LinkScroll spy={true} smooth={true} to="Proyectos">
@@ -52,7 +52,7 @@ const Nav: React.FC = () => {
               <LinkRouter to="/book">
                 <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">Lee mi Libro</li>
               </LinkRouter>
-              <LinkScroll spy={true} smooth={true} to="/contact">
+              <LinkScroll spy={true} smooth={true} to="Contact">
                 <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">Contacto</li>
               </LinkScroll>
             </ul>
