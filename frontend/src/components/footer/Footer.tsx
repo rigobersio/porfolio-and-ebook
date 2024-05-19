@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
               <a href="https://www.amazon.com/dp/B09T4GYLLJ?ref_=cm_sw_r_cp_ud_dp_PJ1NJ0YR2AC0AVY73FZC" target="_blank" rel="noopener noreferrer">
                 <img
                   src="https://res.cloudinary.com/dqh2illb5/image/upload/v1716077714/misLibros/portada-miniatura_fxjdk7.png" alt="portada del libro"
-                 className="inset-0 w-full h-full cursor-pointer hover:scale-110 transition-transform duration-300"
+                 className="inset-0 w-[80%] cursor-pointer hover:scale-110 transition-transform duration-300"
                 />
              </a>
             </div>
