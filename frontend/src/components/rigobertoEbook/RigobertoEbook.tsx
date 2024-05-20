@@ -6,7 +6,17 @@ const RigobertoEbook: React.FC = () => {
   return (
     <div style={{ height: '100vh' }}>
       <ReactReader
-        url=".\Facultad-Prosôdica-Rigoberto.epub"
+        title='Facultad Prosôdica: Departamento de Economía y Menaje'
+        //url="https://react-reader.metabits.no/files/alice.epub"
+        //url="./001.epub"
+        //url="./002.epub"
+        //url="./003.epub"
+        //url="./rigoberto.epub"
+        //url="./004.epub"
+        url="./005.epub"
+        //url="./eBookRigoberto.epub"
+
+
         location={location}
         locationChanged={(epubcfi: string) => setLocation(epubcfi)}
       />
@@ -14,4 +24,4 @@ const RigobertoEbook: React.FC = () => {
   )
 };
 
-export default RigobertoEbook
+export default RigobertoEbook;
