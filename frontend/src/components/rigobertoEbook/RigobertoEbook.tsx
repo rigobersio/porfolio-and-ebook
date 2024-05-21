@@ -13,8 +13,14 @@ const RigobertoEbook: React.FC = () => {
         //url="./003.epub"
         //url="./rigoberto.epub"
         //url="./004.epub"
-        url="./005.epub"
+        //url="./005.epub"
+        //url="./006.epub"
+        //url="./007.epub"
         //url="./eBookRigoberto.epub"
+
+        //original amazon
+        //url="./original.epub"
+        url="frontend\libroAmazon\original.epub"
 
 
         location={location}
