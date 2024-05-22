@@ -1,3 +1,4 @@
+/*
 import React, { useEffect, useRef } from 'react';
 import ePub, { Rendition } from 'epubjs';
 
@@ -7,7 +8,7 @@ const EpubjsReader: React.FC = () => {
 
   useEffect(() => {
     if (epubContainerRef.current) {
-      const book = ePub('frontend\libroAmazon\original.epub');
+      const book = ePub('path/...original.epub');
       const rendition = book.renderTo(epubContainerRef.current, {
         width: '100%',
         height: '100%',
@@ -34,3 +35,4 @@ const EpubjsReader: React.FC = () => {
 };
 
 export default EpubjsReader;
+*/

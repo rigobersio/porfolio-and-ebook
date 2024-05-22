@@ -1,3 +1,4 @@
+/*
 import React, { useState } from 'react'
 import { ReactReader } from 'react-reader'
 
@@ -31,3 +32,4 @@ const RigobertoEbook: React.FC = () => {
 };
 
 export default RigobertoEbook;
+*/

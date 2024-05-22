@@ -96,7 +96,7 @@ const Projects: React.FC = () => {
                 en formato de cartas individuales. La aplicación ofrece una interfaz intuitiva con filtros, barra de búsqueda y
                 formularios seguros para la publicación de nuevos corredores</p>
 
-              <div className="p-2 w-80 h-80 sm:w-96 sm:h-60 ml-24 relative rounded-2xl overflow-hidden animate-fade animate-once animate-duration-[6000ms]">
+              <div className="p-2 w-80 h-80 sm:w-96 sm:h-60 ml-[12%] relative rounded-2xl overflow-hidden animate-fade animate-once animate-duration-[6000ms]">
                 <Slider className="" {...carouselSettings}>
                   {carouselImages.map((image, index) => (
                     <div key={index}>
