@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { FaGithub, FaWhatsapp } from "react-icons/fa";
-import { ImLinkedin } from "react-icons/im";
 import { useInView } from "react-intersection-observer";
 //import { useNavigate } from "react-router-dom";
 
