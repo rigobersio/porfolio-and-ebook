@@ -39,11 +39,12 @@ const About: React.FC = () => {
 */
   return (
     <div className="text-center pt-10 pb-20 lg:w-full">
-      <div className="relative top-10">
+      <div className="relative top-10" ref={introRef}>
         <h2 className=" text-2xl">console.log(<strong>"Hello World"</strong>);</h2>
         <h2 className="text-3xl my-2">My name is <strong>Rigoberto</strong></h2>
         {isIntroVisible && (
-          <p className="w-3/4 mx-auto">I am a web developer, que no sabe demasiado ingles, por lo tanto, te invito a descargar mi CV en castellano.</p>
+          <p className="w-3/4 mx-auto animate-bounce animate-thrice animate-duration-550 animate-ease-in">
+            I am a web developer, que no sabe demasiado ingles, por lo tanto, te invito a descargar mi CV en castellano.</p>
         )}
         {/*<button className="gap-2 px-[20px] py-[5px] rounded mt-6 bg-[#1484d6] border border-[#0e0e0f] transition-all duration-700 hover:bg-transparent hover:text-[#1484d6] " onClick={openPdfView}>Descarga mi CV</button>*/}
 
