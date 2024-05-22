@@ -94,7 +94,7 @@ const Projects: React.FC = () => {
               <p className="p-4 w-3/4  mx-auto animate-fade-right animate-once animate-duration-[4000ms]">Drivers es una App Web desarrollada de forma individual utilizando una metodología scrum. Esta es una single
                 page application (SPA) de corredores de Fórmula Uno para visualizar información detallada de estos corredores
                 en formato de cartas individuales. La aplicación ofrece una interfaz intuitiva con filtros, barra de búsqueda y
-                formularios seguros para la publicación de nuevos corredores</p>
+                formularios seguros para la publicación de nuevos corredores.</p>
 
               <div className="p-2 w-80 h-80 sm:w-96 sm:h-60 ml-[12%] relative rounded-2xl overflow-hidden animate-fade animate-once animate-duration-[6000ms]">
                 <Slider className="" {...carouselSettings}>
