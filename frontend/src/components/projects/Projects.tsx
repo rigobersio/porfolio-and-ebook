@@ -60,7 +60,14 @@ const Projects: React.FC = () => {
 
             <div className="p-2 w-3/4 mx-auto animate-flip-up animate-once animate-duration-[5500ms]">
               <div className="aspect-w-16 aspect-h-19">
-                <iframe className="rounded-lg" src="https://www.youtube.com/embed/s6R8OEWOsV4?si=zD5xsDkKZrQxqe9E" title="Rentify" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe className="rounded-lg" 
+                src="https://www.youtube.com/embed/s6R8OEWOsV4?si=zD5xsDkKZrQxqe9E" 
+                title="Rentify" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerPolicy="strict-origin-when-cross-origin" 
+                allowFullScreen>
+                </iframe>
               </div>
             </div>
 
