@@ -10,7 +10,7 @@ const PdfViewCV: React.FC = () => {
   const CloudCVPDF: string = "https://udeconce-my.sharepoint.com/personal/rigomartinez_udec_cl/_layouts/15/embed.aspx?UniqueId=faffcf27-b056-40c4-89b5-8cec28114b9c";
   // Función para generar y descargar el PDF
   const downloaderFileAtURL = (url: string) => {
-    const fileName: string = url.split("/").pop();
+    const fileName: any = url.split("/").pop();
     //const fileName: string = "Rigoberto-CV-developer_SPA.pdf";
 
     const aTag = document.createElement("a");
