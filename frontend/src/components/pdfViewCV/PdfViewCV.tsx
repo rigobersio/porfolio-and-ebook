@@ -44,7 +44,7 @@ return (
         </button>
       </div>
       <div className="relative h-[80vh]">
-        <iframe className="absolute top-0 left-0 w-full h-full border-0" src={CloudCVPDF} frameborder="0" scrolling="no" allowfullscreen title="Rigoberto-CV-develop_C.pdf"></iframe>
+        <iframe className="absolute top-0 left-0 w-full h-full border-0" src={CloudCVPDF} frameBorder="0" scrolling="no" allowFullScreen title="Rigoberto-CV-develop_C.pdf"></iframe>
       </div>
       <div className="flex gap-10 justify-center mt-[0rem] mb-7">
         <button
