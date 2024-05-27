@@ -51,7 +51,7 @@ const Ebook: React.FC = () => {
                 Información disponible en la página de Safe Creative.
               </p>
               <p className="pt-10 w-3/4 mx-auto animate-fade animate-once animate-duration-[4000ms] font-serif text-lg font-bold text-blue-950">
-                Te ofrezco dos opciones: puedes adquirir el ebook en Amazon haciendo clic en el primer botón, o disfrutarlo de forma gratuita en una calidad similar mediante el segundo botón. Este libro es autoeditado, por lo que es posible que contenga algunos errores de redacción u ortográficos. Si notas algún error, te agradecería que me lo comuniques para poder corregirlo en futuras ediciones (¡pincha aquí para ver mi información de contacto!).
+                Te ofrezco dos opciones: puedes adquirir el ebook en Amazon haciendo clic en el primer botón, o disfrutarlo de forma gratuita en una calidad similar mediante el segundo botón. Este libro es autoeditado, por lo que es posible que contenga algunos errores de redacción u ortográficos. Si notas algún error, te agradecería que me lo comuniques para poder corregirlo en futuras ediciones.
               </p>
               <div className="flex flex-col items-center">
                 <a
