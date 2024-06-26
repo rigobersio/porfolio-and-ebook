@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-import Nav from '../nav/Nav'
-import Footer from '../footer/Footer'
-import About from '../about/About'
+import Nav from '../nav/Nav';
+import Footer from '../footer/Footer';
+import About from '../about/About';
 import Projects from '../projects/Projects';
 import Skills from '../skills/Skills';
 //import Contact from '../contact/Contact';
