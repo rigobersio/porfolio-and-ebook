@@ -142,12 +142,12 @@ const Projects: React.FC = () => {
               </p>
             
               <div className="p-2 w-3/4 mx-auto animate-flip-up animate-once animate-duration-[5000ms]">
-              <div className="aspect-w-16 aspect-h-19">
+              <div className="w-[10%]">
                 <img src="https://res.cloudinary.com/dqh2illb5/image/upload/v1723669540/SPA-Tasks/spa-tasks_htpu6s.png" alt="imagen de la App SPA-Tasks" className="w-full rounded-lg" />
               </div>
               <li className="my-4 list-none flex items-center gap-3">
               <CgWebsite className="mr-1" />
-              <a href="https://spa-tasks.onrender.com/" className="ml-1 text-white hover:text-pink-500 transform hover:scale-150
+              <a href="https://spa-tasks.onrender.com/" className="ml-1 hover:text-purple-800 transform hover:scale-150
                              transition-all duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">Ir a SPA-Tasks</a>
             </li>
             </div>
