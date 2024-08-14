@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
+import { CgWebsite } from "react-icons/cg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -90,38 +91,38 @@ const Projects: React.FC = () => {
           {/*</>*/}
           <div className="text-justify">
             <div className="mb-5 border-gradient-to-r border-2 from-purple-500 via-pink-500 to-red-500 rounded-md p-3 outline-none">
-              <h3 className="w-3/4 mx-auto text-left text-amber-950  text-2xl my-2 hover:text-neutral-900 transition"><strong>Drivers</strong></h3>
+              <h3 className="w-3/4 mx-auto text-left text-amber-950  text-2xl my-2 hover:text-neutral-900 transition"><strong>SPA-Task</strong></h3>
 
               <div className="flex gap-10 justify-center mt-5">
                 <a className=" hover:text-blue-950 transform hover:scale-150 transition-all duration-150 ease-in-out"
-                  href="https://github.com/rigobersio/pi-drivers-main" target="_blank" rel="noopener noreferrer">
+                  href="https://github.com/rigobersio/spa_tasks" target="_blank" rel="noopener noreferrer">
                   <FaGithub className='w-5 h-5 rounded' />
                 </a>
               </div>
-              <p className="p-4 w-3/4  mx-auto animate-fade-right animate-once animate-duration-[4000ms]">Drivers es una App Web desarrollada de forma individual utilizando una metodología scrum. Esta es una single
-                page application (SPA) de corredores de Fórmula Uno para visualizar información detallada de estos corredores
-                en formato de cartas individuales. La aplicación ofrece una interfaz intuitiva con filtros, barra de búsqueda y
-                formularios seguros para la publicación de nuevos corredores.</p>
-
-              <div className="p-2 w-80 h-80 sm:w-96 sm:h-60 ml-[12%] relative rounded-2xl overflow-hidden animate-fade animate-once animate-duration-[6000ms]">
-                <Slider className="" {...carouselSettings}>
-                  {carouselImages.map((image, index) => (
-                    <div key={index}>
-                      <img className="w-full h-full object-cover rounded-2xl" src={image} alt={`Carrusel de imágenes. Imagen ${index + 1}`}
-                      />
-                    </div>
-                  ))}
-                </Slider>
+              <p className="p-4 w-3/4  mx-auto animate-fade-right animate-once animate-duration-[4000ms]">
+              SPA-Tasks es una aplicación web genial con una interfaz super sencilla y ¡asistida por adorables perritos! 🐶✨ Con ella, puedes crear, visualizar, editar y eliminar tareas, manteniéndolas organizadas en un solo lugar 📝. Este proyecto ha sido desarrollado por dos apasionados programadores, con el objetivo de ofrecer una experiencia entretenida y muy fácil de usar para amigos y familiares de todas las edades 🧑‍💻👩‍💻. ¡Con SPA-Tasks, ¡las tareas se vuelven mucho más divertidas! 🎉🐾📋
+              </p>
+            
+              <div className="p-2 w-3/4 mx-auto animate-flip-up animate-once animate-duration-[5000ms]">
+              <div className="aspect-w-16 aspect-h-19">
+                <img src="https://res.cloudinary.com/dqh2illb5/image/upload/v1723669540/SPA-Tasks/spa-tasks_htpu6s.png" alt="imagen de la App SPA-Tasks" className="w-full rounded-lg" />
               </div>
+              <li className="my-4 list-none flex items-center gap-3">
+              <CgWebsite className="mr-1" />
+              <a href="https://spa-tasks.onrender.com/" className="ml-1 text-white hover:text-pink-500 transform hover:scale-150
+                             transition-all duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">Ir a SPA-Tasks</a>
+            </li>
+            </div>
+              
               <div className="p-4 w-3/4 mx-auto mt-2">
             <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
               <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">React</li>
               <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">JavaScript</li>
-              <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">Redux</li>
               <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">Node.js</li>
               <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">Express</li>
-              <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">Sequelize</li>
-              <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">PostgreSQL</li>
+              <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">jsonwebtoken</li>
+              <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">Zod</li>
+              <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">MongoDB</li>
               </ul>
             </div>
             </div>
