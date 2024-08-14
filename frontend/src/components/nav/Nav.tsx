@@ -1,5 +1,4 @@
 import React from "react";
-//import { Link as LinkRouter } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
 import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
@@ -9,27 +8,38 @@ import { VscTerminal } from "react-icons/vsc";
 const Nav: React.FC = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
-  const content: any = <>
+
+  const content = (
     <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-slate-900 transition">
       <ul className="text-center text-xl p-20">
-        <LinkScroll spy={true} smooth={true} to="Proyectos" onClick={handleClick}>
-          <li className="my-4 py-4 border-slate-800 hover:bg-slate-800 hover:rounded">Proyectos</li>
-        </LinkScroll>
-        <LinkScroll spy={true} smooth={true} to="SobreMi" onClick={handleClick}>
-          <li className="my-4 py-4 border-slate-800 hover:bg-slate-800 hover:rounded">Sobre mí</li>
-        </LinkScroll>
-        <LinkScroll spy={true} smooth={true} to="Skills" onClick={handleClick}>
-          <li className="my-4 py-4 border-slate-800 hover:bg-slate-800 hover:rounded">Skills</li>
-        </LinkScroll>
-        <LinkScroll spy={true} smooth={true} to="Ebook" onClick={handleClick}>
-          <li className="my-4 py-4 border-slate-800 hover:bg-slate-800 hover:rounded">Lee mi Libro</li>
-        </LinkScroll>
-        <LinkScroll spy={true} smooth={true} to="Contact" onClick={handleClick}>
-          <li className="my-4 py-4 border-slate-800 hover:bg-slate-800 hover:rounded">Contacto</li>
-        </LinkScroll>
+        <li className="my-4 py-4 border-slate-800 hover:bg-slate-800 hover:rounded">
+          <LinkScroll spy={true} smooth={true} to="Proyectos" onClick={handleClick}>
+            Proyectos
+          </LinkScroll>
+        </li>
+        <li className="my-4 py-4 border-slate-800 hover:bg-slate-800 hover:rounded">
+          <LinkScroll spy={true} smooth={true} to="SobreMi" onClick={handleClick}>
+            Sobre mí
+          </LinkScroll>
+        </li>
+        <li className="my-4 py-4 border-slate-800 hover:bg-slate-800 hover:rounded">
+          <LinkScroll spy={true} smooth={true} to="Skills" onClick={handleClick}>
+            Skills
+          </LinkScroll>
+        </li>
+        <li className="my-4 py-4 border-slate-800 hover:bg-slate-800 hover:rounded">
+          <LinkScroll spy={true} smooth={true} to="Ebook" onClick={handleClick}>
+            Lee mi Libro
+          </LinkScroll>
+        </li>
+        <li className="my-4 py-4 border-slate-800 hover:bg-slate-800 hover:rounded">
+          <LinkScroll spy={true} smooth={true} to="Contact" onClick={handleClick}>
+            Contacto
+          </LinkScroll>
+        </li>
       </ul>
     </div>
-  </>
+  );
 
   return (
     <nav>
@@ -37,32 +47,43 @@ const Nav: React.FC = () => {
         <div className="flex items-center flex-1">
           <span className="text-3xl font-bold"><VscTerminal /></span>
         </div>
-        <div className="lg:flex md:flex items center justify-end font-normal hidden">
+        <div className="lg:flex md:flex items-center justify-end font-normal hidden">
           <div className="flex-10">
             <ul className="flex gap-8 mr-16 text-[18]">
-              <LinkScroll spy={true} smooth={true} to="Proyectos">
-                <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">Proyectos</li>
-              </LinkScroll>
-              <LinkScroll spy={true} smooth={true} to="SobreMi">
-                <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">Sobre mi</li>
-              </LinkScroll>
-              <LinkScroll spy={true} smooth={true} to="Skills">
-                <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">Skills</li>
-              </LinkScroll>
-              <LinkScroll spy={true} smooth={true} to="Ebook">
-                <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">Lee mi Libro</li>
-              </LinkScroll>
-              <LinkScroll spy={true} smooth={true} to="Contact">
-                <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">Contacto</li>
-              </LinkScroll>
+              <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">
+                <LinkScroll spy={true} smooth={true} to="Proyectos">
+                  Proyectos
+                </LinkScroll>
+              </li>
+              <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">
+                <LinkScroll spy={true} smooth={true} to="SobreMi">
+                  Sobre mí
+                </LinkScroll>
+              </li>
+              <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">
+                <LinkScroll spy={true} smooth={true} to="Skills">
+                  Skills
+                </LinkScroll>
+              </li>
+              <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">
+                <LinkScroll spy={true} smooth={true} to="Ebook">
+                  Lee mi Libro
+                </LinkScroll>
+              </li>
+              <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">
+                <LinkScroll spy={true} smooth={true} to="Contact">
+                  Contacto
+                </LinkScroll>
+              </li>
             </ul>
           </div>
         </div>
-        <div>{click && content} </div>
-        <button className="block sm:hidden transition" onClick={handleClick}>{ click ? <FaTimes/> : <CiMenuFries/>}</button>
+        <div>{click && content}</div>
+        <button className="block sm:hidden transition" onClick={handleClick}>
+          {click ? <FaTimes /> : <CiMenuFries />}
+        </button>
       </div>
     </nav>
-
   );
 };
 
