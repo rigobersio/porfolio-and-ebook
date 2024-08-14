@@ -11,7 +11,7 @@ const Nav: React.FC = () => {
   const handleClick = () => setClick(!click);
   const content: any = <>
     <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-slate-900 transition">
-      <ul className="text-center text-xl p-20">
+      <ul className="text-center text-xl p-20" onClick={handleClick}>
         <LinkScroll spy={true} smooth={true} to="Proyectos">
           <li className="my-4 py-4 border-slate-800 hover:bg-slate-800 hover:rounded">Proyectos</li>
         </LinkScroll>
