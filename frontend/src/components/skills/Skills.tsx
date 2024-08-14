@@ -34,7 +34,7 @@ const Skills: React.FC = () => {
       </h2>
       {isSkillsVisible && (
       <div className="flex justify-center items-center m-12 animate-wiggle animate-infinite animate-duration-[23000ms]">
-      <div className="bg-gray-200 rounded-full p-3 lg:p-2 shadow-lg">
+      <div className="bg-gray-200 rounded-full p-3 lg:p-2">
         <div className="bg-white rounded-full p-3 lg:p-2 flex flex-wrap justify-center items-center gap-4 md:gap-6 lg:gap-8">
 
           <IconJS />
