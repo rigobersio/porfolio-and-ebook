@@ -44,7 +44,7 @@ const Skills: React.FC = () => {
           <IconNode />
           <IconExpress />
           <IconPostgre />
-          <img src={IconMongoDB} alt="MongoDB logo" className="w-12 h-12"/>
+          <img src={IconMongoDB} alt="MongoDB logo" className="w-11 h-11"/>
           <IconGit />
           <IconGitHub />
           <IconWindows />
