@@ -91,6 +91,44 @@ const Projects: React.FC = () => {
           {/*</>*/}
           <div className="text-justify">
             <div className="mb-5 border-gradient-to-r border-2 from-purple-500 via-pink-500 to-red-500 rounded-md p-3 outline-none">
+              <h3 className="w-3/4 mx-auto text-left text-amber-950  text-2xl my-2 hover:text-neutral-900 transition"><strong>Drivers</strong></h3>
+
+              <div className="flex gap-10 justify-center mt-5">
+                <a className=" hover:text-blue-950 transform hover:scale-150 transition-all duration-150 ease-in-out"
+                  href="https://github.com/rigobersio/pi-drivers-main" target="_blank" rel="noopener noreferrer">
+                  <FaGithub className='w-5 h-5 rounded' />
+                </a>
+              </div>
+              <p className="p-4 w-3/4  mx-auto animate-fade-right animate-once animate-duration-[4000ms]">Drivers es una App Web desarrollada de forma individual utilizando una metodología scrum. Esta es una single
+                page application (SPA) de corredores de Fórmula Uno para visualizar información detallada de estos corredores
+                en formato de cartas individuales. La aplicación ofrece una interfaz intuitiva con filtros, barra de búsqueda y
+                formularios seguros para la publicación de nuevos corredores.</p>
+
+              <div className="p-2 w-80 h-80 sm:w-96 sm:h-60 ml-[12%] relative rounded-2xl overflow-hidden animate-fade animate-once animate-duration-[6000ms]">
+                <Slider className="" {...carouselSettings}>
+                  {carouselImages.map((image, index) => (
+                    <div key={index}>
+                      <img className="w-full h-full object-cover rounded-2xl" src={image} alt={`Carrusel de imágenes. Imagen ${index + 1}`}
+                      />
+                    </div>
+                  ))}
+                </Slider>
+              </div>
+              <div className="p-4 w-3/4 mx-auto mt-2">
+            <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
+              <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">React</li>
+              <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">JavaScript</li>
+              <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">Redux</li>
+              <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">Node.js</li>
+              <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">Express</li>
+              <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">Sequelize</li>
+              <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">PostgreSQL</li>
+              </ul>
+            </div>
+            </div>
+          </div>
+          <div className="text-justify">
+            <div className="mb-5 border-gradient-to-r border-2 from-purple-500 via-pink-500 to-red-500 rounded-md p-3 outline-none">
               <h3 className="w-3/4 mx-auto text-left text-amber-950  text-2xl my-2 hover:text-neutral-900 transition"><strong>SPA-Task</strong></h3>
 
               <div className="flex gap-10 justify-center mt-5">
