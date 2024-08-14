@@ -11,20 +11,20 @@ const Nav: React.FC = () => {
   const handleClick = () => setClick(!click);
   const content: any = <>
     <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-slate-900 transition">
-      <ul className="text-center text-xl p-20" onClick={handleClick}>
-        <LinkScroll spy={true} smooth={true} to="Proyectos">
+      <ul className="text-center text-xl p-20">
+        <LinkScroll spy={true} smooth={true} to="Proyectos" onClick={handleClick}>
           <li className="my-4 py-4 border-slate-800 hover:bg-slate-800 hover:rounded">Proyectos</li>
         </LinkScroll>
-        <LinkScroll spy={true} smooth={true} to="SobreMi">
+        <LinkScroll spy={true} smooth={true} to="SobreMi" onClick={handleClick}>
           <li className="my-4 py-4 border-slate-800 hover:bg-slate-800 hover:rounded">Sobre mí</li>
         </LinkScroll>
-        <LinkScroll spy={true} smooth={true} to="Skills">
+        <LinkScroll spy={true} smooth={true} to="Skills" onClick={handleClick}>
           <li className="my-4 py-4 border-slate-800 hover:bg-slate-800 hover:rounded">Skills</li>
         </LinkScroll>
-        <LinkScroll spy={true} smooth={true} to="Ebook">
+        <LinkScroll spy={true} smooth={true} to="Ebook" onClick={handleClick}>
           <li className="my-4 py-4 border-slate-800 hover:bg-slate-800 hover:rounded">Lee mi Libro</li>
         </LinkScroll>
-        <LinkScroll spy={true} smooth={true} to="Contact">
+        <LinkScroll spy={true} smooth={true} to="Contact" onClick={handleClick}>
           <li className="my-4 py-4 border-slate-800 hover:bg-slate-800 hover:rounded">Contacto</li>
         </LinkScroll>
       </ul>
