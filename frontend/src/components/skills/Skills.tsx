@@ -14,6 +14,7 @@ import IconGit from "../icons/VscodeIconsFileTypeGit";
 import IconGitHub from "../icons/AkarIconsGithubFill";
 import IconWindows from "../icons/DeviconWindows11";
 import IconLinux from "../icons/LogosLinuxTux";
+import IconMongoDB from "../icons/mongodbIcon.svg"
 const Skills: React.FC = () => {
   const [isSkillsVisible, setIsSkillsVisible] = useState(false);
 
@@ -43,6 +44,7 @@ const Skills: React.FC = () => {
           <IconNode />
           <IconExpress />
           <IconPostgre />
+          <img src={IconMongoDB} alt="MongoDB logo" />
           <IconGit />
           <IconGitHub />
           <IconWindows />
