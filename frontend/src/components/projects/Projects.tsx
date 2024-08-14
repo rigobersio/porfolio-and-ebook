@@ -141,11 +141,11 @@ const Projects: React.FC = () => {
               SPA-Tasks es una aplicación web genial con una interfaz super sencilla y ¡asistida por adorables perritos! 🐶✨ Con ella, puedes crear, visualizar, editar y eliminar tareas, manteniéndolas organizadas en un solo lugar 📝. Este proyecto ha sido desarrollado por dos apasionados programadores, con el objetivo de ofrecer una experiencia entretenida y muy fácil de usar para amigos y familiares de todas las edades 🧑‍💻👩‍💻. ¡Con SPA-Tasks, ¡las tareas se vuelven mucho más divertidas! 🎉🐾📋
               </p>
             
-              <div className="p-2 w-3/4 mx-auto animate-flip-up animate-once animate-duration-[5000ms]">
+              <div className="p-2 w-3/4 mx-auto animate-bounce animate-twice animate-ease-out animate-duration-[5500ms]">
               <div className="w-[30%]">
                 <img src="https://res.cloudinary.com/dqh2illb5/image/upload/v1723669540/SPA-Tasks/spa-tasks_htpu6s.png" alt="imagen de la App SPA-Tasks" className="w-full rounded-lg" />
               </div>
-              <li className="my-4 mt-4 list-none flex items-center gap-3">
+              <li className="my-4 mt-4 list-none flex items-center gap-4">
               <CgWebsite className="mr-1" />
               <a href="https://spa-tasks.onrender.com/" className="ml-2 hover:text-purple-800 transform hover:scale-150
                              transition-all duration-150 ease-in-out" target="_blank" rel="noopener noreferrer"><strong>Ir a SPA-Tasks</strong></a>
