@@ -142,7 +142,7 @@ const Projects: React.FC = () => {
               </p>
             
               <div className="p-2 w-3/4 mx-auto">
-              <div className="w-[30%] animate-bounce animate-twice animate-ease-out animate-duration-[3500ms]">
+              <div className="w-[30%] animate-wiggle animate-once animate-ease-in-out animate-duration-[3500ms]">
                 <img src="https://res.cloudinary.com/dqh2illb5/image/upload/v1723669540/SPA-Tasks/spa-tasks_htpu6s.png" alt="imagen de la App SPA-Tasks" className="w-full rounded-lg" />
               </div>
               <li className="my-4 mt-4 list-none flex items-center gap-4">
