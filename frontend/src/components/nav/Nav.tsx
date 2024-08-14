@@ -47,7 +47,7 @@ const Nav: React.FC = () => {
         <div className="flex items-center flex-1">
           <span className="text-3xl font-bold"><VscTerminal /></span>
         </div>
-        <div className="lg:flex md:flex items-center justify-end font-normal hidden">
+        <div className="lg:flex items-center justify-end font-normal hidden">
           <div className="flex-10">
             <ul className="flex gap-8 mr-16 text-[18]">
               <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">
@@ -79,7 +79,7 @@ const Nav: React.FC = () => {
           </div>
         </div>
         <div>{click && content}</div>
-        <button className="block sm:hidden transition" onClick={handleClick}>
+        <button className="block lg:hidden transition" onClick={handleClick}>
           {click ? <FaTimes /> : <CiMenuFries />}
         </button>
       </div>
