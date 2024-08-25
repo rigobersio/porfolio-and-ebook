@@ -52,7 +52,7 @@ const About: React.FC = () => {
           href="/cv"
           target="_blank"
           rel="noopener noreferrer"
-          className="gap-2 px-[20px] py-[5px] rounded mt-6 bg-[#1484d6] border border-[#0e0e0f] transition-all duration-700 hover:bg-transparent hover:text-[#1484d6] inline-block"
+          className="gap-2 px-[20px] py-[5px] rounded mt-6 bg-[#1484d6] text-white border border-[#0e0e0f] transition-all duration-700 hover:bg-transparent hover:text-[#1484d6] inline-block"
         >
           Descarga mi CV
         </a>
