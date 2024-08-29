@@ -43,7 +43,7 @@ return (
       <div className="flex justify-center ">
         <button
           onClick={() => downloaderFileAtURL(PDF_FILE_URL)}
-          className="lg:mt-5 mb-0 mt-2 px-[20px] py-[5px] rounded  bg-[#1484d6] border border-[#f5dabe] transition-all duration-700 hover:bg-transparent hover:text-[#1484d6] "
+          className="lg:mt-5 mb-0 mt-2 px-[20px] py-[5px] rounded text-white  bg-[#1484d6] border border-[#f5dabe] transition-all duration-700 hover:bg-transparent hover:text-[#1484d6] "
         >
           Descarga mi CV
         </button>
