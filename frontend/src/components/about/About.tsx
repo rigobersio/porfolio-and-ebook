@@ -70,7 +70,7 @@ const About: React.FC = () => {
               <ImLinkedin className='w-7 h-7 rounded' />
             </a>
             <a className=" hover:text-green-600 transform hover:scale-150 transition-all duration-150 ease-in-out"
-              href="https://wa.link/ivnase" target="_blank" rel="noopener noreferrer">
+              href="https://wa.link/my2g4o" target="_blank" rel="noopener noreferrer">
               <FaWhatsapp className='w-7 h-7 rounded' />
             </a>
           </div>
