@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
           <div id="Contact" className="mb-4 md:mb-0">
             <h2 className="text-[22px] font-semibold text-pink-500 py-2 uppercase">Contacto</h2>
             <p className="text-[16px] my-4">Email: rigoberto.developer@tutanota.com</p>
-            <p className="text-[16px] my-4">WhatsApp: +1(210)6988-222 </p>
+            <p className="text-[16px] my-4"></p>
             <div className="flex space-x-4 mt-5">
               <a
                 className="text-white hover:text-pink-500 transform hover:scale-150 transition-all duration-150 ease-in-out"
@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
               </a>
               <a
                 className="text-white hover:text-pink-500 transform hover:scale-150 transition-all duration-150 ease-in-out"
-                href="https://wa.link/ivnase" target="_blank" rel="noopener noreferrer">
+                href="https://wa.link/my2g4o" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp className='w-6 h-6 rounded' />
               </a>
             </div>
