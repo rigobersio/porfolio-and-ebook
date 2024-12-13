@@ -7,7 +7,7 @@ import CV from "./Rigoberto-CV-developer_SPA.pdf";
 const PDF_FILE_URL: string = CV;
 
 const PdfViewCV: React.FC = () => {
-  const CloudCVPDF: string = "https://archive.org/embed/rigoberto-cv-developer-spa";
+  const CloudCVPDF: string = "https://archive.org/embed/rigoberto-cv-developer-spa_202412";
   //const CloudCVPDF: string = "https://udeconce-my.sharepoint.com/personal/rigomartinez_udec_cl/_layouts/15/embed.aspx?UniqueId=faffcf27-b056-40c4-89b5-8cec28114b9c";
   // Función para generar y descargar el PDF
   const downloaderFileAtURL = (url: string) => {
@@ -38,7 +38,7 @@ return (
     <div className="bg-orange-50 h-screen">
       
       <div className="flex justify-center items-center h-[85%] lg:h-[93%]">
-        <iframe className="w-full h-full border-0" src={CloudCVPDF} frameBorder="0" scrolling="no" allowFullScreen title="Rigoberto-CV-develop_C.pdf"></iframe>
+        <iframe className="w-full h-full border-0" src={CloudCVPDF} frameBorder="0" scrolling="no" allowFullScreen title="Rigoberto-CV-developer"></iframe>
       </div>
       <div className="flex justify-center ">
         <button
