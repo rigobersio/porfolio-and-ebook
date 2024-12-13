@@ -7,7 +7,7 @@ import CV from "./Rigoberto-CV-developer_SPA.pdf";
 const PDF_FILE_URL: string = CV;
 
 const PdfViewCV: React.FC = () => {
-  const CloudCVPDF: string = "https://archive.org/embed/rigoberto-cv-developer-spa_202412";
+  const CloudCVPDF: string = "https://archive.org/embed/rigoberto-cv-develop-d";
   //const CloudCVPDF: string = "https://udeconce-my.sharepoint.com/personal/rigomartinez_udec_cl/_layouts/15/embed.aspx?UniqueId=faffcf27-b056-40c4-89b5-8cec28114b9c";
   // Función para generar y descargar el PDF
   const downloaderFileAtURL = (url: string) => {
