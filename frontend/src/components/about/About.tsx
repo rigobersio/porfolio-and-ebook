@@ -75,7 +75,21 @@ const About: React.FC = () => {
             </a>
           </div>
           <div className="grid min-h-[140px] w-full place-items-center overflow-x-scroll rounded-lg p-6 lg:overflow-visible">
-            <img className="object-cover object-center rounded-full h-96 w-96" src="https://res.cloudinary.com/dqh2illb5/image/upload/v1714359052/codigo/equipoViejo_yj3ibg.jpg" alt="computadora vieja con teclado" />
+            <picture>
+              <source
+                media="(max-width: 600px)"
+                srcSet="https://res.cloudinary.com/dqh2illb5/image/upload/v1736723624/porfolio/equipoViejo_menor_calidad-m_igwomu.png"
+              />
+              <source
+                media="(min-width: 601px)"
+                srcSet="https://res.cloudinary.com/dqh2illb5/image/upload/v1736722910/porfolio/equipoViejo_menor_calidad_aq6ogx.png"
+              />
+              <img
+                className="object-cover object-center rounded-full w-60 h-60 lg:h-96 lg:w-96"
+                src="https://res.cloudinary.com/dqh2illb5/image/upload/v1714359052/codigo/equipoViejo_yj3ibg.jpg"
+                alt="computadora vieja con teclado"
+              />
+            </picture>
           </div>
         </div>
       </div>
