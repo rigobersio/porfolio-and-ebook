@@ -55,6 +55,17 @@ const Projects: React.FC = () => {
     "https://res.cloudinary.com/dqh2illb5/image/upload/v1736624727/porfolio/proyecto_Faith/hglevnzfgplmwcyezqxj.png"
   ];
 
+  const carouselImagesCabana: string[] = [
+    "https://res.cloudinary.com/dqh2illb5/image/upload/v1737005994/porfolio/cabana/cabana1_ranxlk.png",
+    "https://res.cloudinary.com/dqh2illb5/image/upload/v1737005984/porfolio/cabana/cabana2_yonvvy.png",
+    "https://res.cloudinary.com/dqh2illb5/image/upload/v1737005996/porfolio/cabana/cabana3_vkw3li.png",
+    "https://res.cloudinary.com/dqh2illb5/image/upload/v1737005985/porfolio/cabana/cabana4_rczahw.png",
+    "https://res.cloudinary.com/dqh2illb5/image/upload/v1737006005/porfolio/cabana/cabana5_krmaim.png",
+    "https://res.cloudinary.com/dqh2illb5/image/upload/v1737005994/porfolio/cabana/cabana6_usqcm9.png",
+    "https://res.cloudinary.com/dqh2illb5/image/upload/v1737005993/porfolio/cabana/cabana7_xjxsxj.png",
+    "https://res.cloudinary.com/dqh2illb5/image/upload/v1737005981/porfolio/cabana/cabana8_u5guh7.png"
+  ];
+
   const carouselImagesVictory: string[] = [
     "https://res.cloudinary.com/dqh2illb5/image/upload/v1736949088/porfolio/proyect-victory/victory1_xstfh1.png",
     "https://res.cloudinary.com/dqh2illb5/image/upload/v1736949088/porfolio/proyect-victory/victory2_pskjvy.png",
@@ -75,7 +86,7 @@ const Projects: React.FC = () => {
             <h3 className="w-3/4 mx-auto text-left text-amber-950  text-2xl my-2 hover:text-neutral-900 transition"><strong>Rentify</strong></h3>
 
             <div className="flex gap-10 justify-center mt-5">
-              <a className=" hover:text-blue-950 transform hover:scale-150 transition-all duration-150 ease-in-out"
+              <a className=" hover:text-blue-950 transform hover:scale-110 transition-all duration-150 ease-in-out"
                 href="https://github.com/jlcarrascof/PF-Henry-Project" target="_blank" rel="noopener noreferrer">
                 <FaGithub className='w-5 h-5 rounded' />
               </a>
@@ -119,7 +130,7 @@ const Projects: React.FC = () => {
               <h3 className="w-3/4 mx-auto text-left text-amber-950  text-2xl my-2 hover:text-neutral-900 transition"><strong>Drivers</strong></h3>
 
               <div className="flex gap-10 justify-center mt-5">
-                <a className=" hover:text-blue-950 transform hover:scale-150 transition-all duration-150 ease-in-out"
+                <a className=" hover:text-blue-950 transform hover:scale-110 transition-all duration-150 ease-in-out"
                   href="https://github.com/rigobersio/pi-drivers-main" target="_blank" rel="noopener noreferrer">
                   <FaGithub className='w-5 h-5 rounded' />
                 </a>
@@ -160,7 +171,7 @@ const Projects: React.FC = () => {
               <h3 className="w-3/4 mx-auto text-left text-amber-950  text-2xl my-2 hover:text-neutral-900 transition"><strong>SPA-Task</strong></h3>
 
               <div className="flex gap-10 justify-center mt-5">
-                <a className=" hover:text-blue-950 transform hover:scale-150 transition-all duration-150 ease-in-out"
+                <a className=" hover:text-blue-950 transform hover:scale-110 transition-all duration-150 ease-in-out"
                   href="https://github.com/rigobersio/spa_tasks" target="_blank" rel="noopener noreferrer">
                   <FaGithub className='w-5 h-5 rounded' />
                 </a>
@@ -175,7 +186,7 @@ const Projects: React.FC = () => {
                 </div>
                 <li className="my-4 mt-4 list-none flex items-center gap-4">
                   <CgWebsite className="mr-1" />
-                  <a href="https://spa-tasks.onrender.com/" className="ml-2 hover:text-purple-800 transform hover:scale-150
+                  <a href="https://spa-tasks.onrender.com/" className="ml-2 hover:text-purple-800 transform hover:scale-110
                              transition-all duration-150 ease-in-out" target="_blank" rel="noopener noreferrer"><strong>Ir a SPA-Tasks</strong></a>
                 </li>
               </div>
@@ -183,58 +194,100 @@ const Projects: React.FC = () => {
               <div className="p-4 w-3/4 mx-auto mt-2">
                 <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
                   <li
-                  className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                    className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
                   >
                     React
                   </li>
                   <li
-                  className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                    className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
                   >
                     JavaScript
                   </li>
                   <li
-                  className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                    className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
                   >
                     Tailwind CSS
                   </li>
                   <li
                     className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
-                    >
-                      Node.js
+                  >
+                    Node.js
                   </li>
                   <li
                     className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
-                    >
-                      Express
-                    </li>
-                  <li
-                    className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
-                    >
-                      jsonwebtoken
-                    </li>
-                  <li
-                    className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
-                    >
-                      Zod
+                  >
+                    Express
                   </li>
                   <li
                     className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
-                    >
-                      MongoDB
-                    </li>
+                  >
+                    jsonwebtoken
+                  </li>
+                  <li
+                    className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                  >
+                    Zod
+                  </li>
+                  <li
+                    className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                  >
+                    MongoDB
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
-          {/*cabahna 4000 4500*/}
-          
+          {/*cabahna*/}
+          <div className="text-justify">
+            <div className="mb-5 border-gradient-to-r border-2 from-purple-500 via-pink-500 to-red-500 rounded-md p-3 outline-none">
+              <h3 className="w-3/4 mx-auto text-left text-amber-950  text-2xl my-2 hover:text-neutral-900 transition"><strong>Cabaña de las Flores</strong></h3>
+
+              <div className="flex gap-10 justify-center mt-5">
+                <a className=" hover:text-blue-950 transform hover:scale-110 transition-all duration-150 ease-in-out"
+                  href="https://github.com/rigobersio/" target="_blank" rel="noopener noreferrer">
+                  <FaGithub className='w-5 h-5 rounded' />
+                </a>
+              </div>
+              <p className="p-4 w-3/4  mx-auto animate-fade-right animate-once animate-duration-[4000ms]">
+                <strong>Cabaña de las Flores</strong> es una floristería en México que se especializa en diseños florales para toda ocasión. Para este proyecto, se me asignó la tarea de desarrollar una página web estática y responsiva, que reflejara la estética elegante de la empresa y ofreciera un gran potencial de crecimiento, permitiendo su transformación futura en una SPA de manera eficiente. Como parte del desarrollo, adapté una plantilla creada con Bootstrap y React, asegurando un diseño atractivo y funcional. En este proyecto, estoy a cargo de todo el desarrollo web, así como del despliegue y mantenimiento, trabajando de manera remota bajo la supervisión de un desarrollador más experimentado y aplicando metodologías ágiles como Scrum.
+              </p>
+              <div className="p-2 w-3/4 m-auto">
+                <div className="py-2 w-80 h-80 sm:w-96 sm:h-60 relative rounded-2xl overflow-hidden animate-fade animate-once animate-duration-[4500ms]">
+                  <Slider className="" {...carouselSettings}>
+                    {carouselImagesCabana.map((image, index) => (
+                      <div key={index}>
+                        <img
+                          className="w-full h-full object-cover rounded-2xl"
+                          src={image}
+                          alt={`Carrusel de imágenes. Imagen ${index + 1}`}
+                        />
+                      </div>
+                    ))}
+                  </Slider>
+                </div>
+                <li className="my-4 mt-4 list-none flex items-center gap-4">
+                  <CgWebsite className="mr-1" />
+                  <a href="https://cabana-de-las-flores.onrender.com" className="ml-2 hover:text-purple-800 transform hover:scale-110
+                             transition-all duration-150 ease-in-out" target="_blank" rel="noopener noreferrer"><strong>Ir a Cabaña de las Flores</strong></a>
+                </li>
+              </div>
+
+              <div className="p-4 w-3/4 mx-auto mt-2">
+                <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
+                  <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">React</li>
+                  <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">JavaScript</li>
+                  <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">Bootstrap</li>
+                </ul>
+              </div>
+            </div>
+          </div>
           {/*Faith*/}
           <div className="text-justify">
             <div className="mb-5 border-gradient-to-r border-2 from-purple-500 via-pink-500 to-red-500 rounded-md p-3 outline-none">
               <h3 className="w-3/4 mx-auto text-left text-amber-950  text-2xl my-2 hover:text-neutral-900 transition"><strong>Startup Faith</strong></h3>
 
               <div className="flex gap-10 justify-center mt-5">
-                <a className=" hover:text-blue-950 transform hover:scale-150 transition-all duration-150 ease-in-out"
+                <a className=" hover:text-blue-950 transform hover:scale-110 transition-all duration-150 ease-in-out"
                   href="https://github.com/rigobersio/" target="_blank" rel="noopener noreferrer">
                   <FaGithub className='w-5 h-5 rounded' />
                 </a>
@@ -248,9 +301,9 @@ const Projects: React.FC = () => {
                     {carouselImagesFaith.map((image, index) => (
                       <div key={index}>
                         <img
-                        className="w-full h-full object-cover rounded-2xl"
-                        src={image}
-                        alt={`Carrusel de imágenes. Imagen ${index + 1}`}
+                          className="w-full h-full object-cover rounded-2xl"
+                          src={image}
+                          alt={`Carrusel de imágenes. Imagen ${index + 1}`}
                         />
                       </div>
                     ))}
@@ -258,17 +311,35 @@ const Projects: React.FC = () => {
                 </div>
                 <li className="my-4 mt-4 list-none flex items-center gap-4">
                   <CgWebsite className="mr-1" />
-                  <a href="https://faith-startup.com/" className="ml-2 hover:text-purple-800 transform hover:scale-150
+                  <a href="https://faith-startup.com/" className="ml-2 hover:text-purple-800 transform hover:scale-110
                              transition-all duration-150 ease-in-out" target="_blank" rel="noopener noreferrer"><strong>Ir a Faith</strong></a>
                 </li>
               </div>
 
               <div className="p-4 w-3/4 mx-auto mt-2">
                 <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
-                  <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">Eleventy</li>
-                  <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">JavaScript</li>
-                  <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">Nunjucks</li>
-                  <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">SASS</li>
+                  <li
+                    className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                  >
+                    Eleventy
+                  </li>
+                  <li
+                    className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                  >
+                    JavaScript
+                  </li>
+                  <li
+                    className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                  >
+                    Nunjucks
+                  </li>
+                  <li
+                    className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">SASS</li>
+                  <li
+                    className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                  >
+                    SMTP
+                  </li>
                 </ul>
               </div>
             </div>
@@ -278,18 +349,20 @@ const Projects: React.FC = () => {
             <div className="mb-5 border-gradient-to-r border-2 from-purple-500 via-pink-500 to-red-500 rounded-md p-3 outline-none">
               <h3
                 className="w-3/4 mx-auto text-left text-amber-950  text-2xl my-2 hover:text-neutral-900 transition"
-                >
-                  <strong>Victory Hair</strong>
+              >
+                <strong>Victory Hair</strong>
               </h3>
               <div className="flex gap-10 justify-center mt-5">
-                <a className=" hover:text-blue-950 transform hover:scale-150 transition-all duration-150 ease-in-out"
+                <a className=" hover:text-blue-950 transform hover:scale-110 transition-all duration-150 ease-in-out"
                   href="https://github.com/rigobersio/" target="_blank" rel="noopener noreferrer">
                   <FaGithub className='w-5 h-5 rounded' />
                 </a>
               </div>
               <p className="p-4 w-3/4  mx-auto animate-fade-right animate-once animate-duration-[6000ms]">
-                Este proyecto, encomendado por la startup <strong>Faith</strong> para la empresa <strong>Victory Hair</strong>, es una iniciativa de largo plazo que se encuentra en continuo desarrollo. Actualmente, consiste en una página web estática construida en React, diseñada para escalar hacia una SPA e integrarse con un servidor basado en Django.
+                Este proyecto, encomendado por la startup <strong>Faith</strong> para un salón de belleza en Brasil llamado <strong>Victory Hair</strong>, es una iniciativa de largo plazo que se encuentra en continuo desarrollo. Actualmente, consiste en una página web estática construida en React, diseñada para escalar hacia una SPA e integrarse con un servidor basado en Django.
+
                 En el marco de este proyecto, <strong>Faith</strong> me asignó el rol de <strong>Team Leader</strong>, con la responsabilidad de entrenar y evaluar a desarrolladores principiantes. Todo el trabajo se ha realizado de manera remota, aplicando metodologías ágiles y priorizando siempre un producto mínimo viable que responda a las necesidades y recursos de <strong>Victory Hair</strong>.
+
                 El diseño, aunque sencillo, ha sido cuidadosamente adaptado para alinearse con los gustos de <strong>Victory Hair</strong> y de sus clientes, garantizando una experiencia completamente responsiva en todos los tamaños de pantalla. Además, soy responsable del despliegue y mantenimiento del sitio web, asegurando su funcionalidad y rendimiento continuo.
               </p>
               <div className="p-2 w-3/4 m-auto">
@@ -298,8 +371,8 @@ const Projects: React.FC = () => {
                     {carouselImagesVictory.map((image, index) => (
                       <div key={index}>
                         <img className="w-full h-full object-cover rounded-2xl"
-                        src={image}
-                        alt={`Carrusel de imágenes. Imagen ${index + 1}`}
+                          src={image}
+                          alt={`Carrusel de imágenes. Imagen ${index + 1}`}
                         />
                       </div>
                     ))}
@@ -308,41 +381,41 @@ const Projects: React.FC = () => {
                 <li className="my-4 mt-4 list-none flex items-center gap-4">
                   <CgWebsite className="mr-1" />
                   <a href="https://victoryhairbr.com.br"
-                    className="ml-2 hover:text-purple-800 transform hover:scale-150 transition-all duration-150 ease-in-out"
+                    className="ml-2 hover:text-purple-800 transform hover:scale-110 transition-all duration-150 ease-in-out"
                     target="_blank"
                     rel="noopener noreferrer">
-                      <strong>Ir a Victory Hair</strong></a>
+                    <strong>Ir a Victory Hair</strong></a>
                 </li>
               </div>
 
               <div className="p-4 w-3/4 mx-auto mt-2">
                 <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
                   <li
-                  className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                    className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
                   >
                     React
                   </li>
                   <li
-                  className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                    className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
                   >
                     JavaScript
                   </li>
                   <li
-                  className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                    className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
                   >
                     Tailwind CSS
                   </li>
                   <li
-                  className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                    className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
                   >
                     zustand
                   </li>
                   <li
-                  className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                    className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
                   >
                     SMTP
                   </li>
-          </ul>
+                </ul>
               </div>
             </div>
           </div>
